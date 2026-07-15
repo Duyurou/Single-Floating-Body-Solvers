@@ -1,0 +1,199 @@
+/* MOTC-时域模拟软件 全局样式 */
+
+* {
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 9pt;
+}
+
+QMainWindow {
+    background-color: #e8e8e8;
+}
+
+/* 菜单栏 */
+QMenuBar {
+    background-color: #004098;
+    color: #ffffff;
+    padding: 2px 0;
+    spacing: 4px;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 6px 12px;
+}
+
+QMenuBar::item:selected,
+QMenuBar::item:pressed {
+    background-color: #0056b8;
+}
+
+QMenu {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #cccccc;
+}
+
+QMenu::item:selected {
+    background-color: #004098;
+    color: #ffffff;
+}
+
+/* 工具栏 */
+QToolBar {
+    background-color: #d9d9d9;
+    border: none;
+    border-bottom: 1px solid #b0b0b0;
+    spacing: 4px;
+    padding: 4px 6px;
+}
+
+QToolBar QToolButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 1px;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #c8c8c8;
+    border: 1px solid #a8a8a8;
+}
+
+QToolBar QToolButton:pressed {
+    background-color: #b0b0b0;
+}
+
+/* 停靠窗口 */
+QDockWidget {
+    color: #222222;
+    titlebar-close-icon: none;
+    titlebar-normal-icon: none;
+}
+
+QDockWidget::title {
+    background-color: #004098;
+    color: #ffffff;
+    padding: 6px 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+QDockWidget > QWidget {
+    border: 1px solid #b0b0b0;
+    background-color: #f5f5f5;
+}
+
+/* 管理窗口树 */
+QTreeWidget {
+    background-color: #ffffff;
+    color: #222222;
+    border: none;
+    outline: none;
+}
+
+QTreeWidget::item {
+    padding: 4px 2px;
+}
+
+QTreeWidget::item:selected {
+    background-color: #004098;
+    color: #ffffff;
+}
+
+/* 图形窗口 */
+QGraphicsView {
+    background-color: #2b2b2b;
+    border: 1px solid #555555;
+}
+
+/* 日志与交互文本框 */
+QTextEdit,
+QPlainTextEdit {
+    background-color: #ffffff;
+    color: #222222;
+    border: none;
+    padding: 4px;
+}
+
+QSplitter::handle {
+    background-color: #b0b0b0;
+}
+
+QSplitter::handle:horizontal {
+    width: 3px;
+}
+
+QSplitter::handle:vertical {
+    height: 3px;
+}
+
+QGroupBox {
+    color: #222222;
+    border: 1px solid #b0b0b0;
+    margin-top: 8px;
+    padding-top: 8px;
+    background-color: #f5f5f5;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 2px 8px;
+    background-color: #004098;
+    color: #ffffff;
+}
+
+QStatusBar {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+/* 对话框 */
+QDialog {
+    background-color: #f5f5f5;
+}
+
+QDialog QLabel {
+    color: #222222;
+}
+
+QLineEdit,
+QComboBox,
+QPlainTextEdit {
+    background-color: #ffffff;
+    color: #222222;
+    border: 1px solid #b0b0b0;
+    padding: 4px;
+}
+
+QPushButton {
+    background-color: #e6e6e6;
+    color: #222222;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    padding: 6px 14px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #d8d8d8;
+}
+
+QPushButton:pressed {
+    background-color: #c8c8c8;
+}
+
+QProgressBar {
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+    background-color: #ffffff;
+    text-align: center;
+    color: #222222;
+    height: 18px;
+}
+
+QProgressBar::chunk {
+    background-color: #004098;
+}
