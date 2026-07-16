@@ -51,8 +51,7 @@ class SoproArchive:
         manifest_names = [
             name
             for name in self._zip.namelist()
-            if name.lower().endswith(".sopro")
-            and not name.endswith("/")
+            if name.lower().endswith(".sopro") and not name.endswith("/")
         ]
         if not manifest_names:
             raise SoproArchiveError("未找到工程清单文件")

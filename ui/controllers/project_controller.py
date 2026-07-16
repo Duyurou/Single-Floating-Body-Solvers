@@ -63,8 +63,12 @@ class ProjectController:
             return False, log_text, ""
 
         self._loaded_project = project
-        return True, self._format_log(project), self._format_interaction(
-            project,
+        return (
+            True,
+            self._format_log(project),
+            self._format_interaction(
+                project,
+            ),
         )
 
     def _format_log(self, project: LoadedProject) -> str:
@@ -77,17 +81,13 @@ class ProjectController:
             f"[INFO] 工程名称: {manifest.name or '未命名'}",
             f"[INFO] 版本: {manifest.version or '-'}",
             f"[INFO] 作者: {manifest.author or '-'}",
-            (
-                "[INFO] 发现 INPUT 目录数量: "
-                f"{len(project.input_summaries)}"
-            ),
+            ("[INFO] 发现 INPUT 目录数量: " f"{len(project.input_summaries)}"),
         ]
         for index, summary in enumerate(project.input_summaries, start=1):
             rel = summary.input_dir.relative_to(project.extract_dir)
             lines.append(f"[INFO] INPUT#{index}: {rel}")
             lines.append(
-                "[INFO] 配置文件: "
-                + ", ".join(summary.config_files),
+                "[INFO] 配置文件: " + ", ".join(summary.config_files),
             )
         return "\n".join(lines)
 
@@ -153,8 +153,7 @@ class ProjectController:
             for key, label in env_labels.items():
                 if key in summary.environment_values:
                     lines.append(
-                        "  "
-                        f"{label}: {summary.environment_values[key]}",
+                        "  " f"{label}: {summary.environment_values[key]}",
                     )
         lines.append("")
         return lines

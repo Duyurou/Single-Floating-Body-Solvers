@@ -41,9 +41,7 @@ def summarize_input_directory(input_dir: Path) -> InputConfigSummary:
     config_text = config_path.read_text(encoding="utf-8", errors="replace")
     all_values = parse_key_value_lines(config_text)
     selected = {
-        key: all_values[key]
-        for key in _CONFIG_KEYS
-        if key in all_values
+        key: all_values[key] for key in _CONFIG_KEYS if key in all_values
     }
 
     env_path = input_dir / "Environment_in.dat"
@@ -52,9 +50,7 @@ def summarize_input_directory(input_dir: Path) -> InputConfigSummary:
         env_values = _parse_environment_file(env_path)
 
     config_files = sorted(
-        item.name
-        for item in input_dir.iterdir()
-        if item.is_file()
+        item.name for item in input_dir.iterdir() if item.is_file()
     )
     return InputConfigSummary(
         input_dir=input_dir,

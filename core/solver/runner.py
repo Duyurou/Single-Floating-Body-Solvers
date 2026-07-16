@@ -36,7 +36,9 @@ class SolverRunner:
 
     def __init__(self, solver_root: Path) -> None:
         self.solver_root = solver_root.resolve()
-        self.exe_path = self.solver_root / "hydroMod" / "hydrodyn_newversion.exe"
+        self.exe_path = (
+            self.solver_root / "hydroMod" / "hydrodyn_newversion.exe"
+        )
         self.fortran_dir = self.solver_root / "Fortran"
 
     def validate(self) -> None:
@@ -119,7 +121,11 @@ class SolverRunner:
         for text in (stdout, stderr):
             for line in reversed(text.splitlines()):
                 normalized = line.strip()
-                if re.search(r"HandProcess:failures:", normalized, re.IGNORECASE):
+                if re.search(
+                    r"HandProcess:failures:",
+                    normalized,
+                    re.IGNORECASE,
+                ):
                     return normalized
         return None
 

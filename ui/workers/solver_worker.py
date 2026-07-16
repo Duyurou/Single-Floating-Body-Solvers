@@ -68,8 +68,7 @@ class SolverWorker(QThread):
             self._case.message = result.message
             self.progress_changed.emit(100)
             self.log_emitted.emit(
-                "[INFO] 结果已归档到 OUTPUT: "
-                + ", ".join(archived.keys()),
+                "[INFO] 结果已归档到 OUTPUT: " + ", ".join(archived.keys()),
             )
             self.succeeded.emit(self._case)
         except (InputBuilderError, SolverRunError) as exc:
