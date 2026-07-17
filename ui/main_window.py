@@ -21,6 +21,7 @@ from PySide6.QtWidgets import (
 
 from app.bootstrap import get_project_root
 from core.models.case import ComputeCaseRecord
+from core.models.environment import EnvironmentDataState
 from core.results.body_parser import BodyParserError, parse_output_disp
 from ui.controllers.project_controller import ProjectController
 from ui.controllers.run_controller import RunController
@@ -28,6 +29,7 @@ from ui.dialogs.compute_task_dialog import (
     ComputeTaskDialog,
     ComputeTaskFormData,
 )
+from ui.dialogs.environment_data_dialog import EnvironmentDataDialog
 from ui.widgets.time_series_chart import DisplacementChartWidget
 
 
@@ -283,9 +285,36 @@ class MainWindow(QMainWindow):
     ) -> None:
         """双击管理树节点时触发对应操作。"""
         del column
-        if item.text(0) != "计算任务":
+        node_text = item.text(0)
+        if node_text == "环境数据":
+            self._open_environment_data_dialog()
             return
-        self._open_compute_task_dialog()
+        if node_text == "计算任务":
+            self._open_compute_task_dialog()
+
+    def _open_environment_data_dialog(self) -> None:
+        """打开环境数据编辑对话框。"""
+        initial_state = self._project_controller.load_environment_data()
+        dialog = EnvironmentDataDialog(self, initial_state=initial_state)
+        dialog.confirmed.connect(self._on_environment_data_confirmed)
+        dialog.exec()
+
+    def _on_environment_data_confirmed(
+        self,
+        state: EnvironmentDataState,
+    ) -> None:
+        """保存环境数据修改。"""
+        success, interaction_text = self._project_controller.save_environment_data(
+            state,
+        )
+        if not success:
+            self._append_log(f"[ERROR] 环境数据保存失败: {interaction_text}")
+            self.statusBar().showMessage("环境数据保存失败")
+            return
+        if self._interaction_edit is not None:
+            self._interaction_edit.setPlainText(interaction_text)
+        self._append_log("[INFO] 环境数据已更新")
+        self.statusBar().showMessage("环境数据已保存")
 
     def _open_compute_task_dialog(self) -> None:
         """打开计算任务对话框。"""
@@ -326,13 +355,39 @@ class MainWindow(QMainWindow):
             self._management_tree.setCurrentItem(case_item)
         return case_item
 
+    def _find_case_tree_item(self, case_id: str) -> QTreeWidgetItem | None:
+        """按工况 ID 查找管理树中的对应分支。"""
+        if self._compute_task_item is None:
+            return None
+        for index in range(self._compute_task_item.childCount()):
+            child = self._compute_task_item.child(index)
+            if child.data(0, Qt.ItemDataRole.UserRole) == case_id:
+                return child
+        return None
+
+    def _resolve_case_tree_item(
+        self,
+        form_data: ComputeTaskFormData,
+        analysis_type: str,
+    ) -> QTreeWidgetItem | None:
+        """静态分析新建分支，动态分析复用已有静态工况分支。"""
+        if analysis_type == "static":
+            return self._add_case_branch(form_data.case_name)
+        static_case = self._run_controller.get_latest_static_case()
+        if static_case is None:
+            return None
+        case_item = self._find_case_tree_item(static_case.case_id)
+        if case_item is not None and self._management_tree is not None:
+            self._management_tree.setCurrentItem(case_item)
+        return case_item
+
     def _start_analysis(
         self,
         form_data: ComputeTaskFormData,
         analysis_type: str,
     ) -> None:
         """启动静态或动态求解。"""
-        case_item = self._add_case_branch(form_data.case_name)
+        case_item = self._resolve_case_tree_item(form_data, analysis_type)
         project = self._project_controller.loaded_project
         case = self._run_controller.start_analysis(
             form_data,
@@ -344,6 +399,10 @@ class MainWindow(QMainWindow):
             on_failure=self._on_solver_failure,
         )
         if case is None:
+            if analysis_type == "static" and case_item is not None:
+                parent = case_item.parent()
+                if parent is not None:
+                    parent.removeChild(case_item)
             return
         if case_item is not None:
             case_item.setData(0, Qt.ItemDataRole.UserRole, case.case_id)
