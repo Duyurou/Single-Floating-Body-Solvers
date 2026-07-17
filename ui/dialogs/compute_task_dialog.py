@@ -77,7 +77,9 @@ class ComputeTaskDialog(QDialog):
         root_layout.addWidget(self._environment_combo, 1, 1, 1, 2)
         root_layout.addWidget(QLabel("模式选择"), 2, 0)
         root_layout.addWidget(self._mode_combo, 2, 1, 1, 2)
-        root_layout.addWidget(QLabel("描述说明"), 3, 0, Qt.AlignmentFlag.AlignTop)
+        root_layout.addWidget(
+            QLabel("描述说明"), 3, 0, Qt.AlignmentFlag.AlignTop
+        )
         root_layout.addWidget(self._description_edit, 3, 1, 1, 2)
 
         self._progress_bar = QProgressBar()

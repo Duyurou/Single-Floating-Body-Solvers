@@ -43,8 +43,7 @@ def load_sopro_project(
         )
 
     summaries = [
-        summarize_input_directory(input_dir)
-        for input_dir in input_dirs
+        summarize_input_directory(input_dir) for input_dir in input_dirs
     ]
     return LoadedProject(
         source_path=sopro_path,

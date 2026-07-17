@@ -34,9 +34,7 @@ def create_case_record(
 ) -> ComputeCaseRecord:
     """创建工况工作目录记录。"""
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    folder = (
-        f"{_sanitize_name(case_name)}_{analysis_type}_{stamp}"
-    )
+    folder = f"{_sanitize_name(case_name)}_{analysis_type}_{stamp}"
     work_dir = cases_root / folder
     input_dir = work_dir / "INPUT"
     output_dir = work_dir / "OUTPUT"
@@ -154,7 +152,10 @@ def prepare_dynamic_input(
     )
     static_result = static_output / "Body" / "static_result.dat"
     if static_result.is_file():
-        shutil.copy2(static_result, case.input_dir / "bodyout" / "static_result.dat")
+        shutil.copy2(
+            static_result,
+            case.input_dir / "bodyout" / "static_result.dat",
+        )
 
     config_path = case.input_dir / "config.dat"
     if not config_path.is_file():

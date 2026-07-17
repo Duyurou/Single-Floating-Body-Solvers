@@ -9,9 +9,9 @@ _root_str = str(_PROJECT_ROOT)
 if _root_str not in sys.path:
     sys.path.insert(0, _root_str)
 
-from PySide6.QtWidgets import QApplication
+from PySide6.QtWidgets import QApplication  # noqa: E402
 
-from ui.main_window import MainWindow, load_stylesheet
+from ui.main_window import MainWindow, load_stylesheet  # noqa: E402
 
 
 def main() -> int:

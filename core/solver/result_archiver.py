@@ -11,7 +11,10 @@ _OUTPUT_MAPPINGS = {
 }
 
 
-def archive_solver_output(input_dir: Path, output_dir: Path) -> dict[str, Path]:
+def archive_solver_output(
+    input_dir: Path,
+    output_dir: Path,
+) -> dict[str, Path]:
     """将 INPUT 下求解输出复制到 OUTPUT 目录。"""
     output_dir.mkdir(parents=True, exist_ok=True)
     archived: dict[str, Path] = {}

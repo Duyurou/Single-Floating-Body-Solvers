@@ -9,7 +9,6 @@ from PySide6.QtWidgets import (
     QDockWidget,
     QGroupBox,
     QMainWindow,
-    QMenu,
     QPlainTextEdit,
     QSplitter,
     QStyle,
@@ -18,7 +17,6 @@ from PySide6.QtWidgets import (
     QTreeWidget,
     QTreeWidgetItem,
     QVBoxLayout,
-    QWidget,
 )
 
 from app.bootstrap import get_project_root
@@ -64,6 +62,7 @@ class MainWindow(QMainWindow):
         self._init_bottom_dock()
         self._init_status_bar()
         self._center_on_screen()
+
     def _init_window(self) -> None:
         """设置窗口标题、默认尺寸。"""
         self.setWindowTitle(self.WINDOW_TITLE)
@@ -88,6 +87,7 @@ class MainWindow(QMainWindow):
                     action.triggered.connect(self._on_open_project)
                 if title == "文件" and action_text == "退出":
                     action.triggered.connect(self.close)
+
     def _init_tool_bar(self) -> None:
         """创建带占位图标的工具栏。"""
         tool_bar = QToolBar("主工具栏", self)
@@ -119,6 +119,7 @@ class MainWindow(QMainWindow):
                 action.triggered.connect(self._on_open_project)
             if index in {2, 6, 8}:
                 tool_bar.addSeparator()
+
     def _init_central_graphics(self) -> None:
         """中央图形窗口区域。"""
         chart = DisplacementChartWidget(self)
@@ -229,6 +230,7 @@ class MainWindow(QMainWindow):
         self._log_edit = log_edit
         layout.addWidget(log_edit)
         return group
+
     def _create_interaction_panel(self) -> QGroupBox:
         """构建交互窗口子面板。"""
         group = QGroupBox("交互窗口")
