@@ -304,8 +304,10 @@ class MainWindow(QMainWindow):
         state: EnvironmentDataState,
     ) -> None:
         """保存环境数据修改。"""
-        success, interaction_text = self._project_controller.save_environment_data(
-            state,
+        success, interaction_text = (
+            self._project_controller.save_environment_data(
+                state,
+            )
         )
         if not success:
             self._append_log(f"[ERROR] 环境数据保存失败: {interaction_text}")
