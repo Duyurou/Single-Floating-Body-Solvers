@@ -4,7 +4,13 @@ from pathlib import Path
 
 from PySide6.QtWidgets import QFileDialog, QMessageBox, QWidget
 
+from core.models.environment import EnvironmentDataState
 from core.models.project import LoadedProject
+from core.sopro.environment_data import (
+    EnvironmentDataError,
+    load_environment_state,
+    save_environment_state,
+)
 from core.sopro.loader import SoproLoadError, load_sopro_project
 
 
@@ -26,6 +32,50 @@ class ProjectController:
     def loaded_project(self) -> LoadedProject | None:
         """当前已加载工程。"""
         return self._loaded_project
+
+    def get_primary_input_dir(self) -> Path | None:
+        """返回首个 INPUT 目录。"""
+        project = self._loaded_project
+        if project is None or not project.input_summaries:
+            return None
+        return project.input_summaries[0].input_dir
+
+    def load_environment_data(self) -> EnvironmentDataState:
+        """加载当前工程的环境数据。"""
+        project = self._loaded_project
+        if project is None:
+            return EnvironmentDataState()
+        input_dir = self.get_primary_input_dir()
+        return load_environment_state(project.extract_dir, input_dir)
+
+    def save_environment_data(
+        self,
+        state: EnvironmentDataState,
+    ) -> tuple[bool, str]:
+        """保存环境数据并刷新工程摘要。"""
+        project = self._loaded_project
+        if project is None:
+            return False, "尚未打开工程，无法保存环境数据。"
+        try:
+            xml_path = save_environment_state(
+                project.extract_dir,
+                self.get_primary_input_dir(),
+                state,
+            )
+        except EnvironmentDataError as exc:
+            return False, str(exc)
+        except OSError as exc:
+            return False, f"写入环境数据失败: {exc}"
+
+        input_dir = self.get_primary_input_dir()
+        if input_dir is not None:
+            from core.sopro.config_parser import summarize_input_directory
+
+            summary = summarize_input_directory(input_dir)
+            if project.input_summaries:
+                project.input_summaries[0] = summary
+        state.xml_path = str(xml_path)
+        return True, self._format_interaction(project)
 
     def open_project_dialog(self) -> tuple[bool, str, str]:
         """

@@ -71,16 +71,6 @@ class RunController:
             )
             return None
 
-        case_name = form_data.case_name.strip() or "新建工况"
-        case_id = str(uuid4())
-        case = create_case_record(
-            case_id,
-            case_name,
-            analysis_type,
-            get_cases_root(),
-        )
-        self._cases[case_id] = case
-
         static_case = None
         if analysis_type == "dynamic":
             static_case = self._find_latest_static_case()
@@ -91,6 +81,19 @@ class RunController:
                     "请先完成静态分析，再运行动态分析。",
                 )
                 return None
+
+        if analysis_type == "dynamic" and static_case is not None:
+            case_name = static_case.case_name
+        else:
+            case_name = form_data.case_name.strip() or "新建工况"
+        case_id = str(uuid4())
+        case = create_case_record(
+            case_id,
+            case_name,
+            analysis_type,
+            get_cases_root(),
+        )
+        self._cases[case_id] = case
 
         source_input = project.input_summaries[0].input_dir
         worker = SolverWorker(
@@ -122,6 +125,10 @@ class RunController:
     def get_case(self, case_id: str) -> ComputeCaseRecord | None:
         """按 ID 获取工况记录。"""
         return self._cases.get(case_id)
+
+    def get_latest_static_case(self) -> ComputeCaseRecord | None:
+        """返回当前工程最近一次成功的静态工况。"""
+        return self._find_latest_static_case()
 
     def _find_latest_static_case(self) -> ComputeCaseRecord | None:
         """查找当前工程最近一次成功的静态工况。"""
