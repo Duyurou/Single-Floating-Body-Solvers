@@ -130,7 +130,7 @@ SolverWorker (QThread 后台线程)
 
 ### 3.1 功能目标
 
-在左侧管理树中，双击 **「环境数据」** 叶子节点，弹出参数编辑对话框，支持：
+在左侧管理树的 **「环境设置」** 下会枚举工程中的全部 `.4048` 环境节点；双击其中一个节点，弹出对应的参数编辑对话框，支持：
 
 - 名称、描述编辑；
 - 风浪 / 风 / 海流 类型下拉选择；
@@ -144,7 +144,7 @@ SolverWorker (QThread 后台线程)
 `ui/main_window.py` 中监听树节点双击：
 
 ```text
-双击「环境数据」 → ProjectController.load_environment_data()
+双击具体环境节点 → ProjectController.load_environment_data(environment_path)
                 → EnvironmentDataDialog 显示
                 → 用户确认 → ProjectController.save_environment_data()
                 → 刷新交互窗口摘要
@@ -171,7 +171,7 @@ SolverWorker (QThread 后台线程)
 
 #### 文件 A：`环境数据.4048`（XML，UI 元数据）
 
-- 位置：`.sopro` 解压目录下的 `{UUID}/环境数据.4048`；
+- 位置：`.sopro` 解压目录下的 `{UUID}/环境数据.4048`；一个工程可以有多个 UUID 目录和多个环境文件；
 - 格式：`RootElement` 下多个 `Element_N`，每个含 `AttributeName` / `AttributeInfo`；
 - 关键字段：
 

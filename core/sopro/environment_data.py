@@ -2,7 +2,8 @@
 
 import re
 import xml.etree.ElementTree as ET
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
+from uuid import uuid4
 
 from core.models.environment import (
     EnvironmentCurrentRow,
@@ -55,30 +56,61 @@ class EnvironmentDataError(Exception):
     """环境数据处理异常。"""
 
 
-def find_environment_data_file(root_dir: Path) -> Path | None:
-    """在解压目录中查找环境数据 XML 文件。"""
-    candidates = sorted(root_dir.rglob("环境数据.*"))
-    if candidates:
-        return candidates[0]
+def find_environment_data_files(root_dir: Path) -> list[Path]:
+    """返回解压目录中的全部环境数据 XML，顺序保持稳定。"""
+
+    candidates: set[Path] = {
+        path for path in root_dir.rglob("环境数据.*") if path.is_file()
+    }
     for path in sorted(root_dir.rglob("*.4048")):
+        if not path.is_file() or path in candidates:
+            continue
         text = path.read_text(encoding="utf-8", errors="replace")
         if "surgeIndex" in text and "wave_data_w0_amplitude" in text:
-            return path
-    return None
+            candidates.add(path)
+    return sorted(candidates, key=lambda path: path.as_posix())
+
+
+def find_environment_data_file(root_dir: Path) -> Path | None:
+    """兼容旧调用：返回排序后的首个环境数据 XML。"""
+
+    candidates = find_environment_data_files(root_dir)
+    return candidates[0] if candidates else None
+
+
+def load_environment_states(extract_dir: Path) -> list[EnvironmentDataState]:
+    """加载工程中的全部环境；不使用某个工况 INPUT 覆盖工程数据。"""
+
+    return [
+        load_environment_state(
+            extract_dir,
+            environment_path=path,
+        )
+        for path in find_environment_data_files(extract_dir)
+    ]
 
 
 def load_environment_state(
     extract_dir: Path,
     input_dir: Path | None = None,
+    environment_path: Path | None = None,
 ) -> EnvironmentDataState:
-    """从工程目录加载环境数据状态。"""
-    xml_path = find_environment_data_file(extract_dir)
+    """加载一个环境；多环境工程应显式传入 ``environment_path``。"""
+
+    xml_path = environment_path or find_environment_data_file(extract_dir)
+    if xml_path is not None and not xml_path.is_file():
+        raise EnvironmentDataError(f"环境数据文件不存在: {xml_path}")
     attrs: dict[str, str] = {}
     if xml_path is not None:
         attrs = _read_xml_attributes(xml_path)
 
     state = EnvironmentDataState(
         name=attrs.get("display_name", "环境数据"),
+        environment_id=(
+            _environment_id_from_path(xml_path, extract_dir)
+            if xml_path is not None
+            else ""
+        ),
         description=attrs.get("description", ""),
         wind_wave_index=_safe_int(attrs.get("surgeIndex"), 0),
         wind_index=_safe_int(attrs.get("windIndex"), 0),
@@ -98,13 +130,18 @@ def save_environment_state(
     state: EnvironmentDataState,
 ) -> Path:
     """保存环境数据到 XML 与 Environment_in.dat。"""
-    xml_path = (
-        Path(state.xml_path)
-        if state.xml_path
-        else find_environment_data_file(extract_dir)
-    )
-    if xml_path is None or not xml_path.is_file():
-        xml_path = _create_environment_data_file(extract_dir)
+    if state.xml_path:
+        xml_path = Path(state.xml_path)
+        if not xml_path.is_file():
+            raise EnvironmentDataError(f"环境数据文件不存在: {xml_path}")
+    else:
+        environment_id = state.environment_id.strip() or str(uuid4())
+        xml_path = _create_environment_data_file(
+            extract_dir,
+            environment_id,
+            state.name,
+        )
+        state.environment_id = environment_id
 
     attrs = _read_xml_attributes(xml_path)
     attrs["display_name"] = state.name
@@ -125,7 +162,20 @@ def save_environment_state(
             _write_environment_dat(env_path, state)
         _sync_config_dat(input_dir / "config.dat", state)
 
+    state.xml_path = str(xml_path)
     return xml_path
+
+
+def _environment_id_from_path(xml_path: Path, extract_dir: Path) -> str:
+    """优先使用旧 PACKET 目录名作为稳定环境 ID。"""
+
+    try:
+        relative_path = xml_path.resolve().relative_to(extract_dir.resolve())
+    except ValueError:
+        relative_path = xml_path
+    if len(relative_path.parts) >= 2:
+        return relative_path.parts[-2]
+    return xml_path.stem
 
 
 def _safe_int(value: str | None, default: int) -> int:
@@ -186,16 +236,25 @@ def _write_xml_attributes(path: Path, attrs: dict[str, str]) -> None:
     tree.write(path, encoding="utf-8", xml_declaration=False)
 
 
-def _create_environment_data_file(extract_dir: Path) -> Path:
-    folder = extract_dir / "environment_data"
+def _create_environment_data_file(
+    extract_dir: Path,
+    environment_id: str,
+    display_name: str,
+) -> Path:
+    _validate_environment_id(environment_id)
+    folder = extract_dir / environment_id
     folder.mkdir(parents=True, exist_ok=True)
     path = folder / "环境数据.4048"
+    if path.exists():
+        raise EnvironmentDataError(
+            f"环境 ID 已存在，不能覆盖已有环境: {environment_id}",
+        )
     path.write_text(
         "<?xml version='1.0' encoding='utf-8'?>\n<RootElement/>\n",
         encoding="utf-8",
     )
     defaults = {
-        "display_name": "环境数据",
+        "display_name": display_name.strip() or "环境数据",
         "description": "",
         "surgeIndex": "0",
         "windIndex": "0",
@@ -216,6 +275,23 @@ def _create_environment_data_file(extract_dir: Path) -> Path:
     }
     _write_xml_attributes(path, defaults)
     return path
+
+
+def _validate_environment_id(environment_id: str) -> None:
+    """环境 ID 将作为工程内目录名，必须是安全的单个路径段。"""
+
+    if not environment_id.strip():
+        raise EnvironmentDataError("environment_id 不能为空")
+    posix_path = PurePosixPath(environment_id)
+    windows_path = PureWindowsPath(environment_id)
+    if (
+        posix_path.is_absolute()
+        or windows_path.is_absolute()
+        or len(posix_path.parts) != 1
+        or len(windows_path.parts) != 1
+        or environment_id in {".", ".."}
+    ):
+        raise EnvironmentDataError("environment_id 必须是安全的单个路径段")
 
 
 def _wave_prefix(index: int) -> str | None:

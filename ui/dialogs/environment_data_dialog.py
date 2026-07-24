@@ -224,6 +224,7 @@ class EnvironmentDataDialog(QDialog):
 
         return EnvironmentDataState(
             name=self._name_edit.text().strip() or "环境数据",
+            environment_id=self._state.environment_id,
             description=self._description_edit.toPlainText().strip(),
             wind_wave_index=self._wind_wave_combo.currentIndex(),
             wind_index=self._wind_combo.currentIndex(),

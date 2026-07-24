@@ -48,6 +48,7 @@ class MainWindow(QMainWindow):
         self._log_edit: QTextEdit | None = None
         self._interaction_edit: QPlainTextEdit | None = None
         self._management_tree: QTreeWidget | None = None
+        self._environment_setting_item: QTreeWidgetItem | None = None
         self._compute_task_item: QTreeWidgetItem | None = None
         self._active_compute_dialog: ComputeTaskDialog | None = None
         self._displacement_chart: DisplacementChartWidget | None = None
@@ -153,6 +154,7 @@ class MainWindow(QMainWindow):
         # 海工系统：环境与海域基础设定
         marine_system = QTreeWidgetItem(["海工系统"])
         env_setting = QTreeWidgetItem(["环境设置"])
+        self._environment_setting_item = env_setting
         env_setting.addChild(QTreeWidgetItem(["环境数据"]))
         sea_area = QTreeWidgetItem(["海域设置"])
         sea_area.addChild(QTreeWidgetItem(["海面设置"]))
@@ -199,6 +201,29 @@ class MainWindow(QMainWindow):
         task_params.setExpanded(True)
         compute_task.setExpanded(True)
         return root
+
+    def _refresh_environment_tree(self) -> None:
+        """按当前工程中的全部环境刷新管理树。"""
+
+        parent = self._environment_setting_item
+        if parent is None:
+            return
+        parent.takeChildren()
+        states = self._project_controller.list_environment_data()
+        if not states:
+            parent.addChild(QTreeWidgetItem(["环境数据"]))
+            return
+
+        used_labels: set[str] = set()
+        for state in states:
+            label = state.name.strip() or state.environment_id
+            if label in used_labels:
+                label = f"{label} ({state.environment_id})"
+            used_labels.add(label)
+            item = QTreeWidgetItem([label])
+            item.setData(0, Qt.ItemDataRole.UserRole, state.xml_path)
+            parent.addChild(item)
+        parent.setExpanded(True)
 
     def _init_bottom_dock(self) -> None:
         """底部日志与交互停靠面板。"""
@@ -259,6 +284,7 @@ class MainWindow(QMainWindow):
             if project is not None:
                 title = project.manifest.name or project.source_path.stem
                 self.setWindowTitle(f"{self.WINDOW_TITLE} - {title}")
+                self._refresh_environment_tree()
                 self._run_controller.bind_project(project)
                 self.statusBar().showMessage(
                     f"已打开工程: {project.source_path.name}",
@@ -286,15 +312,25 @@ class MainWindow(QMainWindow):
         """双击管理树节点时触发对应操作。"""
         del column
         node_text = item.text(0)
-        if node_text == "环境数据":
-            self._open_environment_data_dialog()
+        if (
+            self._environment_setting_item is not None
+            and item.parent() is self._environment_setting_item
+        ):
+            raw_path = item.data(0, Qt.ItemDataRole.UserRole)
+            environment_path = Path(raw_path) if raw_path else None
+            self._open_environment_data_dialog(environment_path)
             return
         if node_text == "计算任务":
             self._open_compute_task_dialog()
 
-    def _open_environment_data_dialog(self) -> None:
+    def _open_environment_data_dialog(
+        self,
+        environment_path: Path | None = None,
+    ) -> None:
         """打开环境数据编辑对话框。"""
-        initial_state = self._project_controller.load_environment_data()
+        initial_state = self._project_controller.load_environment_data(
+            environment_path,
+        )
         dialog = EnvironmentDataDialog(self, initial_state=initial_state)
         dialog.confirmed.connect(self._on_environment_data_confirmed)
         dialog.exec()
@@ -315,6 +351,7 @@ class MainWindow(QMainWindow):
             return
         if self._interaction_edit is not None:
             self._interaction_edit.setPlainText(interaction_text)
+        self._refresh_environment_tree()
         self._append_log("[INFO] 环境数据已更新")
         self.statusBar().showMessage("环境数据已保存")
 
@@ -336,14 +373,19 @@ class MainWindow(QMainWindow):
         self._active_compute_dialog = None
 
     def _environment_options(self) -> list[str]:
-        """获取环境下拉选项，默认至少包含环境数据。"""
-        options = ["环境数据"]
+        """获取全部环境名称，默认至少包含一个环境选项。"""
+        options: list[str] = []
         project = self._project_controller.loaded_project
         if project is None:
-            return options
-        if project.manifest.name and project.manifest.name not in options:
-            return options
-        return options
+            return ["环境数据"]
+        used_labels: set[str] = set()
+        for state in self._project_controller.list_environment_data():
+            label = state.name.strip() or state.environment_id
+            if label in used_labels:
+                label = f"{label} ({state.environment_id})"
+            used_labels.add(label)
+            options.append(label)
+        return options or ["环境数据"]
 
     def _add_case_branch(self, case_name: str) -> QTreeWidgetItem | None:
         """在计算任务节点下新建工况分支。"""
