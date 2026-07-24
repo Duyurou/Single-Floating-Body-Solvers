@@ -1,0 +1,10 @@
+{
+  "copied_project": {
+    "path": "tests\\fixtures\\golden\\projects\\single-floater-ten-riser.sopro",
+    "sha256": "DF0DEE168D70B125DA8ACFCD3131E29172C3524FFFE42808FE87C94446584F73"
+  },
+  "source_project": {
+    "path": "单浮体求解器集成包\\reference\\example-project\\single-floater-ten-riser.sopro",
+    "sha256": "DF0DEE168D70B125DA8ACFCD3131E29172C3524FFFE42808FE87C94446584F73"
+  }
+}

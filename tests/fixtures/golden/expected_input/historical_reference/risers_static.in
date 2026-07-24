@@ -1,0 +1,597 @@
+NUMRISERS	10
+
+Data For Wavemesh
+Item   XLength YLength NumX    NumY	Angle
+MESHWAVE	1000.000000	1000.000000	100.000000	2.000000	180.000000
+
+Data For Solution Control
+Item	JOB	ITER	Relax	TSTEP	TBGN	TEND	RampTime	filterDyn	fStation	sStation	OutPrecision
+SOLUTION	1	100	1.000000	0.020000	0.000000	500.000000	0.000000	0.001000	25	800	8
+
+Data For lNSeabed
+Item	NumGridX	NumGridY	Path
+
+Data For Out Control
+Item	isRx isRy isRz isSx isSy isSz isFx isFy isFz isMx isMy isMz  isT isVx isVy isVz isAx isAy isAz
+OUTCONTROL    1    1    1    1    1    1    1    1    1    1    1    1    1	1	1	1	1	1	1	1	1	1	1
+
+IDENTITY	1
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	40.000000	0.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	835.000000	0.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	2
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	-40.000000	0.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	-835.000000	0.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	3
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	-40.000000	20.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	-835.000000	20.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	4
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	-40.000000	-20.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	-835.000000	-20.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	5
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	40.000000	-20.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	835.000000	-20.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	6
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	20.000000	40.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	20.000000	835.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	7
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	40.000000	20.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	835.000000	20.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	8
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	20.000000	-40.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	20.000000	-835.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	9
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	-20.000000	-40.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	-20.000000	-835.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+
+IDENTITY	10
+
+Data For Global Control
+Item	numMats	numSects	numElems	numLoads	numMass	numBond	numCurts	numWaves	MotnType	isMesh
+GLOBAL	1	1	110	0	0	2	0	0	3	1
+
+Data For Material Models
+Item	NM	dryMass	wetMass	E	Etime	relaxTime	Psn	Cisd
+MATERIAL	1	400.000000	367.798675	168067619905.041443	168067619905.041443	0.000000	0.000000	0.100000	
+
+Data For Geometrical Models
+Item	NS	Dia	Dis	At	Af	Ai	I	Cd	Cm
+GEOMETRICAL	1	0.200000	0.100000	0.013744	0.031416	0.017671	0.000059023862	0.800000	0.000000	
+
+Data For Ocean Engineering
+Item	GRAVITY	Dbtm	RoF	RoI	FrictCofLat	FricCofAxi	NmlStif	LatStif	AxiStif	Vel	Press	PrDrop	Inlet	CurrentType
+ENVIRONMENT	9.810000	-600.000000	1025.000000	0.000000	0.000000	0.000000	100000.000000	100000.000000	100000.000000	0.000000	0.000000	0.000000	1	1
+
+Data For Nodal Points
+Item	NP	X	Y	Z	X'	Y'	Z'
+POINTS	1	-20.000000	40.000000	-30.629999	0.0	0.0	0.0
+POINTS	111	-20.000000	835.000000	-600.000000	0.0	0.0	0.0
+
+Data For Tension
+Item	NP	TensionMid	TensionNode
+LAMDA	1	0.000000	0.000000
+LAMDA	111	0.000000	0.000000
+
+Data For Elements
+Item	NE	L	TYPE	NM	NS
+ELEMENT	1	10.000000	2	1	1
+ELEMENT	110	10.000000	2	1	1
+
+Data For Loads
+Item	NL	NODE	Fx	Fy	Fz	Mx	My	Mz
+
+Data For Bondary Conditions
+Item	NP	X	Y	Z	Rx	Ry	Rz
+BONDARY	1	1	1	1	0	0	0	
+BONDARY	111	1	1	1	0	0	0	
+
+Data For Forced Motion
+Item	Xampl	Xfreq	Xphase	Yampl	Yfreq	Yphase	Zampl	Zfreq	Zphase
+
+Data for Buoyancy
+Item	BuoyancyID	Diameter	Length	Mass	Appliedposition
+
+Data For Linker
+Item	LinkerID	Length	Tension	isSlave
+
+Data For Linker Point
+Item	LinkerID	L-1x	L-1y	L-1z	L-2x	L-2y	L-2z	isSlave
+
+Data For Output Nodes
+Item	np	isOut
+OUTPUTNODE	1	1
+OUTPUTNODE	111	1
+

@@ -1,0 +1,63 @@
+{
+  "assets": [
+    {
+      "allowed_use": [
+        "manifest",
+        "project_structure",
+        "historical_input_reference"
+      ],
+      "id": "G-PROJECT-01",
+      "limitations": [
+        "OUTPUT is not a complete static/dynamic golden result"
+      ],
+      "path": "tests\\fixtures\\golden\\projects\\single-floater-ten-riser.sopro",
+      "status": "extracted_source"
+    },
+    {
+      "allowed_use": [
+        "format_inventory",
+        "compatibility_comparison"
+      ],
+      "files": [
+        "Environment_in.dat",
+        "Mooringline_in.dat",
+        "WAMIT_5S.1",
+        "WAMIT_5S.11d",
+        "WAMIT_5S.11s",
+        "WAMIT_5S.3",
+        "WAMIT_5S.4",
+        "WAMIT_5S.8",
+        "WAMIT_5S.9",
+        "WAMIT_5S.RAO",
+        "WAMIT_5S.hst",
+        "config.dat",
+        "hydro_log.dat",
+        "risers_static.in"
+      ],
+      "id": "G-HISTORICAL-INPUT-01",
+      "limitations": [
+        "not declared as model-generated golden INPUT"
+      ],
+      "path": "tests\\fixtures\\golden\\expected_input\\historical_reference",
+      "status": "historical_reference_only"
+    },
+    {
+      "allowed_use": [
+        "environment_codec_tests"
+      ],
+      "id": "G-ENV-XML-01",
+      "path": "tests/fixtures/environment_project/case001/环境数据.4048",
+      "status": "existing_local_fixture"
+    }
+  ],
+  "manifest_entry": "lingshui_tenRiser.sopro",
+  "missing_for_full_m0": [
+    "G-INPUT-EXPECTED-01",
+    "G-RESULT-STATIC-01",
+    "G-RESULT-DYNAMIC-01",
+    "G-HYDRO-SLICE-01",
+    "G-UI-RESULT-01"
+  ],
+  "mode": "LOCAL_ONLY",
+  "scope": "ALL-00-01 fixture extraction only"
+}

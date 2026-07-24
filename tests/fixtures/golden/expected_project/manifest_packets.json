@@ -1,0 +1,1577 @@
+[
+  {
+    "children": [
+      "b60a26e0-3b6a-4ee9-9fc5-046974a453f9"
+    ],
+    "name": "海工计算系统",
+    "parent_uuid": null,
+    "path": "0c3f652c-58f5-44f7-8ab9-173a327b0323/",
+    "type": 4026,
+    "uuid": "0c3f652c-58f5-44f7-8ab9-173a327b0323"
+  },
+  {
+    "children": [
+      "12c9f170-f360-4fe8-8aab-9ee3bcd694a6",
+      "d7f0ff47-4f41-454a-9000-e50a822a0ced",
+      "41cec03a-414a-4a57-8083-bd864b8e34b5",
+      "795898ff-7990-4818-8db3-6948bbc92ac6",
+      "3bca85e1-70b0-40ea-91c4-c81a41bb4e30",
+      "dac7fda4-0d22-4151-8cac-367f44d48ab7",
+      "7eb00a5b-4dba-44d6-b6f1-4bc2c5aa394f"
+    ],
+    "name": "海工系统",
+    "parent_uuid": "0c3f652c-58f5-44f7-8ab9-173a327b0323",
+    "path": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9/",
+    "type": 4027,
+    "uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9"
+  },
+  {
+    "children": [
+      "358735c9-f0c4-4681-95eb-2dd3b5dd1c92"
+    ],
+    "name": "环境设置",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "12c9f170-f360-4fe8-8aab-9ee3bcd694a6/",
+    "type": 4049,
+    "uuid": "12c9f170-f360-4fe8-8aab-9ee3bcd694a6"
+  },
+  {
+    "children": [],
+    "name": "环境数据",
+    "parent_uuid": "12c9f170-f360-4fe8-8aab-9ee3bcd694a6",
+    "path": "358735c9-f0c4-4681-95eb-2dd3b5dd1c92/",
+    "type": 4048,
+    "uuid": "358735c9-f0c4-4681-95eb-2dd3b5dd1c92"
+  },
+  {
+    "children": [
+      "b82c4c66-9e6f-445c-884e-23dd6616a915",
+      "13f15ccd-4ebe-4b35-abd4-a3741477f0bf"
+    ],
+    "name": "海域设置",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "d7f0ff47-4f41-454a-9000-e50a822a0ced/",
+    "type": 4057,
+    "uuid": "d7f0ff47-4f41-454a-9000-e50a822a0ced"
+  },
+  {
+    "children": [],
+    "name": "海面设置",
+    "parent_uuid": "d7f0ff47-4f41-454a-9000-e50a822a0ced",
+    "path": "b82c4c66-9e6f-445c-884e-23dd6616a915/",
+    "type": 4056,
+    "uuid": "b82c4c66-9e6f-445c-884e-23dd6616a915"
+  },
+  {
+    "children": [],
+    "name": "海底设置",
+    "parent_uuid": "d7f0ff47-4f41-454a-9000-e50a822a0ced",
+    "path": "13f15ccd-4ebe-4b35-abd4-a3741477f0bf/",
+    "type": 4055,
+    "uuid": "13f15ccd-4ebe-4b35-abd4-a3741477f0bf"
+  },
+  {
+    "children": [
+      "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf"
+    ],
+    "name": "水面平台系统",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "41cec03a-414a-4a57-8083-bd864b8e34b5/",
+    "type": 4037,
+    "uuid": "41cec03a-414a-4a57-8083-bd864b8e34b5"
+  },
+  {
+    "children": [
+      "319ce590-e446-40f5-b395-8851ee465181",
+      "ed6468d1-1cdc-4ef9-bae1-0fa7795a3bca",
+      "a5fb1c7a-1cc7-4bc4-b62f-a535609bce5b",
+      "22e4b5de-2b00-4f94-bdfe-58b440f30c92"
+    ],
+    "name": "浮体",
+    "parent_uuid": "41cec03a-414a-4a57-8083-bd864b8e34b5",
+    "path": "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf/",
+    "type": 4512,
+    "uuid": "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf"
+  },
+  {
+    "children": [
+      "b0b3a4dc-dd03-4990-8b71-cf8f1e4c3015",
+      "23025c87-af52-486b-a3c5-17c5b59b7be9",
+      "210c58f2-56fc-4845-a6a4-cddcfeb48133",
+      "f57629eb-b7f9-4254-b5b6-dff7ee6a71cb",
+      "9278645d-ca77-4589-b331-ea09ba249e5e",
+      "c54c46dc-4f97-4702-9f7e-308de7a62272",
+      "c3c7078f-e8a4-42c4-a30b-be0abcd795df",
+      "908de485-0611-4959-86ae-446f607b21b6",
+      "83aa64a3-a046-4a6c-8945-4c39f46dd140",
+      "93b08bcd-6f19-4775-aa3f-a67a49cc99b3",
+      "3d4fc232-d575-4110-a966-18ba2819f3e3",
+      "bf9c0162-3961-4b3d-9fc7-104f7affa6cb",
+      "7e7a37d8-6515-4ed7-b0b8-5022a6a3514e",
+      "36708119-ba88-4899-95d4-404ba77abaf3",
+      "3a8bc1cb-8fa2-4adc-a8f8-97a038f58d2f",
+      "ae2fd4ed-8ab9-42f6-9e6e-f5e681793894",
+      "3bf7cb5d-0594-4e69-a271-44913a2149f6",
+      "993bb20b-a6d2-4f3f-8cbb-d6f5a5a2dc9f",
+      "67ec8496-d788-41b7-b293-cc3826130582",
+      "e78ddfab-5898-4600-a8a6-df6cadb83c42",
+      "8903318a-1027-4ca5-9536-d87e6cfb652c",
+      "edbe4b40-fa2b-413e-a2e7-b5cf50f2d8f7",
+      "1e15b249-f53d-439e-a801-948f65128036",
+      "91775b63-fe0f-46b4-bfdf-da3deda49f8c",
+      "dfbfa286-058b-48aa-90b9-7ebe6a83a584",
+      "c6e260fd-8150-40cf-8fcb-1d4045c130f2",
+      "c5751d12-2707-4cdc-a116-0437a5635fad",
+      "2d69d407-f054-495a-b55e-3a9cea5d2db7",
+      "3a25b584-a3d3-489f-a0d8-e0f5376fd8a0",
+      "ae800959-6889-418f-b0cb-d91128c41c84"
+    ],
+    "name": "水动力系数",
+    "parent_uuid": "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf",
+    "path": "319ce590-e446-40f5-b395-8851ee465181/",
+    "type": 4050,
+    "uuid": "319ce590-e446-40f5-b395-8851ee465181"
+  },
+  {
+    "children": [],
+    "name": "结构质量",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "b0b3a4dc-dd03-4990-8b71-cf8f1e4c3015/",
+    "type": 4075,
+    "uuid": "b0b3a4dc-dd03-4990-8b71-cf8f1e4c3015"
+  },
+  {
+    "children": [],
+    "name": "静水刚度",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "23025c87-af52-486b-a3c5-17c5b59b7be9/",
+    "type": 4076,
+    "uuid": "23025c87-af52-486b-a3c5-17c5b59b7be9"
+  },
+  {
+    "children": [],
+    "name": "一阶波浪力传递函数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "210c58f2-56fc-4845-a6a4-cddcfeb48133/",
+    "type": 4077,
+    "uuid": "210c58f2-56fc-4845-a6a4-cddcfeb48133"
+  },
+  {
+    "children": [],
+    "name": "差频二阶波浪力传递函数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "f57629eb-b7f9-4254-b5b6-dff7ee6a71cb/",
+    "type": 4148,
+    "uuid": "f57629eb-b7f9-4254-b5b6-dff7ee6a71cb"
+  },
+  {
+    "children": [],
+    "name": "一阶运动传递函数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "9278645d-ca77-4589-b331-ea09ba249e5e/",
+    "type": 4078,
+    "uuid": "9278645d-ca77-4589-b331-ea09ba249e5e"
+  },
+  {
+    "children": [],
+    "name": "波浪漫漂力",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "c54c46dc-4f97-4702-9f7e-308de7a62272/",
+    "type": 4147,
+    "uuid": "c54c46dc-4f97-4702-9f7e-308de7a62272"
+  },
+  {
+    "children": [],
+    "name": "延迟函数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "c3c7078f-e8a4-42c4-a30b-be0abcd795df/",
+    "type": 4099,
+    "uuid": "c3c7078f-e8a4-42c4-a30b-be0abcd795df"
+  },
+  {
+    "children": [],
+    "name": "其他计算参数设置",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "908de485-0611-4959-86ae-446f607b21b6/",
+    "type": 4079,
+    "uuid": "908de485-0611-4959-86ae-446f607b21b6"
+  },
+  {
+    "children": [],
+    "name": "线型流荷载系数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "83aa64a3-a046-4a6c-8945-4c39f46dd140/",
+    "type": 4089,
+    "uuid": "83aa64a3-a046-4a6c-8945-4c39f46dd140"
+  },
+  {
+    "children": [],
+    "name": "线性阻尼矩阵",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "93b08bcd-6f19-4775-aa3f-a67a49cc99b3/",
+    "type": 4090,
+    "uuid": "93b08bcd-6f19-4775-aa3f-a67a49cc99b3"
+  },
+  {
+    "children": [],
+    "name": "非线性浮力修正",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "3d4fc232-d575-4110-a966-18ba2819f3e3/",
+    "type": 4091,
+    "uuid": "3d4fc232-d575-4110-a966-18ba2819f3e3"
+  },
+  {
+    "children": [],
+    "name": "非线性静水刚度",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "bf9c0162-3961-4b3d-9fc7-104f7affa6cb/",
+    "type": 4092,
+    "uuid": "bf9c0162-3961-4b3d-9fc7-104f7affa6cb"
+  },
+  {
+    "children": [],
+    "name": "二次流载荷系数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "7e7a37d8-6515-4ed7-b0b8-5022a6a3514e/",
+    "type": 4093,
+    "uuid": "7e7a37d8-6515-4ed7-b0b8-5022a6a3514e"
+  },
+  {
+    "children": [],
+    "name": "二次阻尼矩阵",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "36708119-ba88-4899-95d4-404ba77abaf3/",
+    "type": 4094,
+    "uuid": "36708119-ba88-4899-95d4-404ba77abaf3"
+  },
+  {
+    "children": [],
+    "name": "二次风系数结构",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "3a8bc1cb-8fa2-4adc-a8f8-97a038f58d2f/",
+    "type": 4095,
+    "uuid": "3a8bc1cb-8fa2-4adc-a8f8-97a038f58d2f"
+  },
+  {
+    "children": [],
+    "name": "节点单元参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "ae2fd4ed-8ab9-42f6-9e6e-f5e681793894/",
+    "type": 4132,
+    "uuid": "ae2fd4ed-8ab9-42f6-9e6e-f5e681793894"
+  },
+  {
+    "children": [],
+    "name": "绕射力幅值参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "3bf7cb5d-0594-4e69-a271-44913a2149f6/",
+    "type": 4133,
+    "uuid": "3bf7cb5d-0594-4e69-a271-44913a2149f6"
+  },
+  {
+    "children": [],
+    "name": "绕射力相位参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "993bb20b-a6d2-4f3f-8cbb-d6f5a5a2dc9f/",
+    "type": 4134,
+    "uuid": "993bb20b-a6d2-4f3f-8cbb-d6f5a5a2dc9f"
+  },
+  {
+    "children": [],
+    "name": "激励力幅值参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "67ec8496-d788-41b7-b293-cc3826130582/",
+    "type": 4135,
+    "uuid": "67ec8496-d788-41b7-b293-cc3826130582"
+  },
+  {
+    "children": [],
+    "name": "激励力相位参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "e78ddfab-5898-4600-a8a6-df6cadb83c42/",
+    "type": 4136,
+    "uuid": "e78ddfab-5898-4600-a8a6-df6cadb83c42"
+  },
+  {
+    "children": [],
+    "name": "平均二阶力参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "8903318a-1027-4ca5-9536-d87e6cfb652c/",
+    "type": 4137,
+    "uuid": "8903318a-1027-4ca5-9536-d87e6cfb652c"
+  },
+  {
+    "children": [],
+    "name": "差频二阶波浪力虚部参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "edbe4b40-fa2b-413e-a2e7-b5cf50f2d8f7/",
+    "type": 4138,
+    "uuid": "edbe4b40-fa2b-413e-a2e7-b5cf50f2d8f7"
+  },
+  {
+    "children": [],
+    "name": "差频二阶波浪力实部参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "1e15b249-f53d-439e-a801-948f65128036/",
+    "type": 4139,
+    "uuid": "1e15b249-f53d-439e-a801-948f65128036"
+  },
+  {
+    "children": [],
+    "name": "和频二阶波浪力虚部参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "91775b63-fe0f-46b4-bfdf-da3deda49f8c/",
+    "type": 4140,
+    "uuid": "91775b63-fe0f-46b4-bfdf-da3deda49f8c"
+  },
+  {
+    "children": [],
+    "name": "和频二阶波浪力实部参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "dfbfa286-058b-48aa-90b9-7ebe6a83a584/",
+    "type": 4141,
+    "uuid": "dfbfa286-058b-48aa-90b9-7ebe6a83a584"
+  },
+  {
+    "children": [],
+    "name": "附加质量参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "c6e260fd-8150-40cf-8fcb-1d4045c130f2/",
+    "type": 4142,
+    "uuid": "c6e260fd-8150-40cf-8fcb-1d4045c130f2"
+  },
+  {
+    "children": [],
+    "name": "辐射阻尼参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "c5751d12-2707-4cdc-a116-0437a5635fad/",
+    "type": 4143,
+    "uuid": "c5751d12-2707-4cdc-a116-0437a5635fad"
+  },
+  {
+    "children": [],
+    "name": "其他阻尼参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "2d69d407-f054-495a-b55e-3a9cea5d2db7/",
+    "type": 4144,
+    "uuid": "2d69d407-f054-495a-b55e-3a9cea5d2db7"
+  },
+  {
+    "children": [],
+    "name": "流载荷参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "3a25b584-a3d3-489f-a0d8-e0f5376fd8a0/",
+    "type": 4145,
+    "uuid": "3a25b584-a3d3-489f-a0d8-e0f5376fd8a0"
+  },
+  {
+    "children": [],
+    "name": "风载荷参数",
+    "parent_uuid": "319ce590-e446-40f5-b395-8851ee465181",
+    "path": "ae800959-6889-418f-b0cb-d91128c41c84/",
+    "type": 4146,
+    "uuid": "ae800959-6889-418f-b0cb-d91128c41c84"
+  },
+  {
+    "children": [],
+    "name": "外部力/力矩",
+    "parent_uuid": "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf",
+    "path": "ed6468d1-1cdc-4ef9-bae1-0fa7795a3bca/",
+    "type": 4052,
+    "uuid": "ed6468d1-1cdc-4ef9-bae1-0fa7795a3bca"
+  },
+  {
+    "children": [],
+    "name": "莫里森单元",
+    "parent_uuid": "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf",
+    "path": "a5fb1c7a-1cc7-4bc4-b62f-a535609bce5b/",
+    "type": 4058,
+    "uuid": "a5fb1c7a-1cc7-4bc4-b62f-a535609bce5b"
+  },
+  {
+    "children": [
+      "09049a4b-788c-48d1-832b-fd5faa8359a4"
+    ],
+    "name": "绑定点设置",
+    "parent_uuid": "35677e6e-a3d5-47f0-ae55-ce2b92aa53bf",
+    "path": "22e4b5de-2b00-4f94-bdfe-58b440f30c92/",
+    "type": 4112,
+    "uuid": "22e4b5de-2b00-4f94-bdfe-58b440f30c92"
+  },
+  {
+    "children": [],
+    "name": "ori",
+    "parent_uuid": "22e4b5de-2b00-4f94-bdfe-58b440f30c92",
+    "path": "09049a4b-788c-48d1-832b-fd5faa8359a4/",
+    "type": 4111,
+    "uuid": "09049a4b-788c-48d1-832b-fd5faa8359a4"
+  },
+  {
+    "children": [],
+    "name": "风电系统",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "795898ff-7990-4818-8db3-6948bbc92ac6/",
+    "type": 4115,
+    "uuid": "795898ff-7990-4818-8db3-6948bbc92ac6"
+  },
+  {
+    "children": [
+      "dd96178c-0cdf-4078-a95d-242deb119a31",
+      "8cf10a04-cedf-4d0e-846d-7b066c1045c3",
+      "bd41c7dd-988a-45d6-a7fe-065b7bb4a607",
+      "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+      "ca48c7da-a51f-42ee-9263-a98202073045"
+    ],
+    "name": "管缆系统",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30/",
+    "type": 4033,
+    "uuid": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30"
+  },
+  {
+    "children": [
+      "583bb91b-0cef-4037-a353-c9dcaedfa493",
+      "3a6e0772-11d0-4342-b90e-95ff8f24c83a",
+      "f26a96d6-6fcb-4274-8df5-1c610cb57834",
+      "4e6ec5c4-85a4-4fe2-9d65-bf06eca26a18",
+      "dafa4c28-addc-47d3-8bf1-fa2405d3e7df",
+      "096679d5-d61a-4daf-a99b-18389eb6e771",
+      "9a243345-95f5-4283-bbd7-53a120a7a7bb",
+      "38d07adb-a35a-47fb-b2c1-46afa8fbb29a",
+      "06e1e5e7-58c8-4513-9141-bc9303cffaf8",
+      "609fb3d8-afde-4787-8aa3-b643dbd61109",
+      "a90b224d-3b79-47dc-aca6-284870ae7bff",
+      "8e09a107-c0ca-40af-b3e8-7094c6f4d309",
+      "336a095b-b17f-4cfa-8866-db18a2b21c50",
+      "808521fd-9ce5-4126-9990-52dcc85b9716",
+      "133db721-2e0c-4559-a770-31e9ff71e53e",
+      "95ef02da-05dc-491f-b101-fad183ebb025",
+      "6d026d31-5dff-40f8-86a2-a778e94c56e3",
+      "056fd165-fa21-407d-bbfe-502ef6fc9233",
+      "5ef3e0d8-f191-494b-aeea-8f9101a69c23",
+      "fd3eef60-5faa-4d30-aeed-1ad88120cb57",
+      "811bccb7-57ed-47e2-9e1d-f9f4de2237c1",
+      "bc87ae31-3808-4289-83e9-92f34bae7ec9",
+      "20f2fbbb-c375-4a33-a5bc-6f5ea927a1c3",
+      "10ecd109-e09d-4877-8376-fd2cb83b408e",
+      "65d5753a-c837-4cf9-9f86-c5db209c59f7",
+      "bd86b451-9e8b-4cb4-bd0a-0e9ba4f1a89b",
+      "86faa6f9-43dd-4837-89a7-e3ea27e065ed",
+      "6088ec30-4913-4906-9500-733e0a3049e0",
+      "9d6bb4b5-d3f3-49b6-b753-2be8c957d288",
+      "d8acc9b3-c550-434e-be2f-180296cdc4e7",
+      "1af22ac1-c1bd-4263-afe0-be59897d978c",
+      "778fcef9-f8a0-470e-9adc-50e1ea49b17b",
+      "56e4a492-8b1b-40cc-86cd-6ed7752c270d",
+      "87cc7927-5e23-4d85-92ba-247b0128f772",
+      "ccaeb24f-c34f-4a37-a857-c8c2d269f67d",
+      "4f238b5b-6c29-4768-ba5b-e99f96997233",
+      "3a7803de-3f78-4fc2-b7e4-fd33dbab5874",
+      "07bcfb47-76d8-4c7c-989c-387fdd7cd24d",
+      "792acc2a-0ba8-4710-9ed3-208abdfbd1e4",
+      "8c82e1b9-adde-4b4a-86fc-fd96999f670a",
+      "6b102cc7-43be-419c-bf7d-3ca35b98c065",
+      "4f4bd602-f050-4aaa-8aed-edcfd200ef86",
+      "fc06f5fc-7791-4149-abd3-353783ad69c2",
+      "cea394df-4a26-44cd-9509-e0880c81405d",
+      "8125468b-6977-497d-88a7-ea55bb1b35a7",
+      "c91eb4e4-931e-4782-8ad7-fbd509600215",
+      "f7799c90-69b1-40bd-a8b5-12a714b6cea9",
+      "57f32c7c-6dc1-4afa-846b-b467df6da596",
+      "d47315e0-43ed-476b-84ff-b8fc03b597e9",
+      "310a5dc0-6c62-48e1-85d3-a78f8c49dab3",
+      "255793a6-701b-4095-af59-caf0b36cdc9a",
+      "5493305f-cc81-4cda-8d0a-7e11729e9ef0"
+    ],
+    "name": "端点设置",
+    "parent_uuid": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30",
+    "path": "dd96178c-0cdf-4078-a95d-242deb119a31/",
+    "type": 4062,
+    "uuid": "dd96178c-0cdf-4078-a95d-242deb119a31"
+  },
+  {
+    "children": [],
+    "name": "端点fl1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "583bb91b-0cef-4037-a353-c9dcaedfa493/",
+    "type": 4042,
+    "uuid": "583bb91b-0cef-4037-a353-c9dcaedfa493"
+  },
+  {
+    "children": [],
+    "name": "端点fl2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "3a6e0772-11d0-4342-b90e-95ff8f24c83a/",
+    "type": 4042,
+    "uuid": "3a6e0772-11d0-4342-b90e-95ff8f24c83a"
+  },
+  {
+    "children": [],
+    "name": "端点fl3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "f26a96d6-6fcb-4274-8df5-1c610cb57834/",
+    "type": 4042,
+    "uuid": "f26a96d6-6fcb-4274-8df5-1c610cb57834"
+  },
+  {
+    "children": [],
+    "name": "端点fl4",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "4e6ec5c4-85a4-4fe2-9d65-bf06eca26a18/",
+    "type": 4042,
+    "uuid": "4e6ec5c4-85a4-4fe2-9d65-bf06eca26a18"
+  },
+  {
+    "children": [],
+    "name": "端点fl5",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "dafa4c28-addc-47d3-8bf1-fa2405d3e7df/",
+    "type": 4042,
+    "uuid": "dafa4c28-addc-47d3-8bf1-fa2405d3e7df"
+  },
+  {
+    "children": [],
+    "name": "端点fl6",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "096679d5-d61a-4daf-a99b-18389eb6e771/",
+    "type": 4042,
+    "uuid": "096679d5-d61a-4daf-a99b-18389eb6e771"
+  },
+  {
+    "children": [],
+    "name": "端点anc1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "9a243345-95f5-4283-bbd7-53a120a7a7bb/",
+    "type": 4042,
+    "uuid": "9a243345-95f5-4283-bbd7-53a120a7a7bb"
+  },
+  {
+    "children": [],
+    "name": "端点anc2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "38d07adb-a35a-47fb-b2c1-46afa8fbb29a/",
+    "type": 4042,
+    "uuid": "38d07adb-a35a-47fb-b2c1-46afa8fbb29a"
+  },
+  {
+    "children": [],
+    "name": "端点anc3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "06e1e5e7-58c8-4513-9141-bc9303cffaf8/",
+    "type": 4042,
+    "uuid": "06e1e5e7-58c8-4513-9141-bc9303cffaf8"
+  },
+  {
+    "children": [],
+    "name": "端点anc4",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "609fb3d8-afde-4787-8aa3-b643dbd61109/",
+    "type": 4042,
+    "uuid": "609fb3d8-afde-4787-8aa3-b643dbd61109"
+  },
+  {
+    "children": [],
+    "name": "端点anc5",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "a90b224d-3b79-47dc-aca6-284870ae7bff/",
+    "type": 4042,
+    "uuid": "a90b224d-3b79-47dc-aca6-284870ae7bff"
+  },
+  {
+    "children": [],
+    "name": "端点anc6",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "8e09a107-c0ca-40af-b3e8-7094c6f4d309/",
+    "type": 4042,
+    "uuid": "8e09a107-c0ca-40af-b3e8-7094c6f4d309"
+  },
+  {
+    "children": [],
+    "name": "端点fl7",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "336a095b-b17f-4cfa-8866-db18a2b21c50/",
+    "type": 4042,
+    "uuid": "336a095b-b17f-4cfa-8866-db18a2b21c50"
+  },
+  {
+    "children": [],
+    "name": "端点fl8",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "808521fd-9ce5-4126-9990-52dcc85b9716/",
+    "type": 4042,
+    "uuid": "808521fd-9ce5-4126-9990-52dcc85b9716"
+  },
+  {
+    "children": [],
+    "name": "端点fl9",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "133db721-2e0c-4559-a770-31e9ff71e53e/",
+    "type": 4042,
+    "uuid": "133db721-2e0c-4559-a770-31e9ff71e53e"
+  },
+  {
+    "children": [],
+    "name": "端点fl10",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "95ef02da-05dc-491f-b101-fad183ebb025/",
+    "type": 4042,
+    "uuid": "95ef02da-05dc-491f-b101-fad183ebb025"
+  },
+  {
+    "children": [],
+    "name": "端点fl11",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "6d026d31-5dff-40f8-86a2-a778e94c56e3/",
+    "type": 4042,
+    "uuid": "6d026d31-5dff-40f8-86a2-a778e94c56e3"
+  },
+  {
+    "children": [],
+    "name": "端点fl12",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "056fd165-fa21-407d-bbfe-502ef6fc9233/",
+    "type": 4042,
+    "uuid": "056fd165-fa21-407d-bbfe-502ef6fc9233"
+  },
+  {
+    "children": [],
+    "name": "端点fl13",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "5ef3e0d8-f191-494b-aeea-8f9101a69c23/",
+    "type": 4042,
+    "uuid": "5ef3e0d8-f191-494b-aeea-8f9101a69c23"
+  },
+  {
+    "children": [],
+    "name": "端点fl14",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "fd3eef60-5faa-4d30-aeed-1ad88120cb57/",
+    "type": 4042,
+    "uuid": "fd3eef60-5faa-4d30-aeed-1ad88120cb57"
+  },
+  {
+    "children": [],
+    "name": "端点anc7",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "811bccb7-57ed-47e2-9e1d-f9f4de2237c1/",
+    "type": 4042,
+    "uuid": "811bccb7-57ed-47e2-9e1d-f9f4de2237c1"
+  },
+  {
+    "children": [],
+    "name": "端点anc8",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "bc87ae31-3808-4289-83e9-92f34bae7ec9/",
+    "type": 4042,
+    "uuid": "bc87ae31-3808-4289-83e9-92f34bae7ec9"
+  },
+  {
+    "children": [],
+    "name": "端点anc9",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "20f2fbbb-c375-4a33-a5bc-6f5ea927a1c3/",
+    "type": 4042,
+    "uuid": "20f2fbbb-c375-4a33-a5bc-6f5ea927a1c3"
+  },
+  {
+    "children": [],
+    "name": "端点anc10",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "10ecd109-e09d-4877-8376-fd2cb83b408e/",
+    "type": 4042,
+    "uuid": "10ecd109-e09d-4877-8376-fd2cb83b408e"
+  },
+  {
+    "children": [],
+    "name": "端点anc11",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "65d5753a-c837-4cf9-9f86-c5db209c59f7/",
+    "type": 4042,
+    "uuid": "65d5753a-c837-4cf9-9f86-c5db209c59f7"
+  },
+  {
+    "children": [],
+    "name": "端点anc12",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "bd86b451-9e8b-4cb4-bd0a-0e9ba4f1a89b/",
+    "type": 4042,
+    "uuid": "bd86b451-9e8b-4cb4-bd0a-0e9ba4f1a89b"
+  },
+  {
+    "children": [],
+    "name": "端点anc13",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "86faa6f9-43dd-4837-89a7-e3ea27e065ed/",
+    "type": 4042,
+    "uuid": "86faa6f9-43dd-4837-89a7-e3ea27e065ed"
+  },
+  {
+    "children": [],
+    "name": "端点anc14",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "6088ec30-4913-4906-9500-733e0a3049e0/",
+    "type": 4042,
+    "uuid": "6088ec30-4913-4906-9500-733e0a3049e0"
+  },
+  {
+    "children": [],
+    "name": "端点fl1-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "9d6bb4b5-d3f3-49b6-b753-2be8c957d288/",
+    "type": 4042,
+    "uuid": "9d6bb4b5-d3f3-49b6-b753-2be8c957d288"
+  },
+  {
+    "children": [],
+    "name": "端点fl1-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "d8acc9b3-c550-434e-be2f-180296cdc4e7/",
+    "type": 4042,
+    "uuid": "d8acc9b3-c550-434e-be2f-180296cdc4e7"
+  },
+  {
+    "children": [],
+    "name": "端点fl1-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "1af22ac1-c1bd-4263-afe0-be59897d978c/",
+    "type": 4042,
+    "uuid": "1af22ac1-c1bd-4263-afe0-be59897d978c"
+  },
+  {
+    "children": [],
+    "name": "端点fl2-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "778fcef9-f8a0-470e-9adc-50e1ea49b17b/",
+    "type": 4042,
+    "uuid": "778fcef9-f8a0-470e-9adc-50e1ea49b17b"
+  },
+  {
+    "children": [],
+    "name": "端点fl2-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "56e4a492-8b1b-40cc-86cd-6ed7752c270d/",
+    "type": 4042,
+    "uuid": "56e4a492-8b1b-40cc-86cd-6ed7752c270d"
+  },
+  {
+    "children": [],
+    "name": "端点fl2-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "87cc7927-5e23-4d85-92ba-247b0128f772/",
+    "type": 4042,
+    "uuid": "87cc7927-5e23-4d85-92ba-247b0128f772"
+  },
+  {
+    "children": [],
+    "name": "端点fl3-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "ccaeb24f-c34f-4a37-a857-c8c2d269f67d/",
+    "type": 4042,
+    "uuid": "ccaeb24f-c34f-4a37-a857-c8c2d269f67d"
+  },
+  {
+    "children": [],
+    "name": "端点fl3-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "4f238b5b-6c29-4768-ba5b-e99f96997233/",
+    "type": 4042,
+    "uuid": "4f238b5b-6c29-4768-ba5b-e99f96997233"
+  },
+  {
+    "children": [],
+    "name": "端点fl3-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "3a7803de-3f78-4fc2-b7e4-fd33dbab5874/",
+    "type": 4042,
+    "uuid": "3a7803de-3f78-4fc2-b7e4-fd33dbab5874"
+  },
+  {
+    "children": [],
+    "name": "端点fl4-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "07bcfb47-76d8-4c7c-989c-387fdd7cd24d/",
+    "type": 4042,
+    "uuid": "07bcfb47-76d8-4c7c-989c-387fdd7cd24d"
+  },
+  {
+    "children": [],
+    "name": "端点fl4-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "792acc2a-0ba8-4710-9ed3-208abdfbd1e4/",
+    "type": 4042,
+    "uuid": "792acc2a-0ba8-4710-9ed3-208abdfbd1e4"
+  },
+  {
+    "children": [],
+    "name": "端点fl4-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "8c82e1b9-adde-4b4a-86fc-fd96999f670a/",
+    "type": 4042,
+    "uuid": "8c82e1b9-adde-4b4a-86fc-fd96999f670a"
+  },
+  {
+    "children": [],
+    "name": "端点anc1-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "6b102cc7-43be-419c-bf7d-3ca35b98c065/",
+    "type": 4042,
+    "uuid": "6b102cc7-43be-419c-bf7d-3ca35b98c065"
+  },
+  {
+    "children": [],
+    "name": "端点anc1-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "4f4bd602-f050-4aaa-8aed-edcfd200ef86/",
+    "type": 4042,
+    "uuid": "4f4bd602-f050-4aaa-8aed-edcfd200ef86"
+  },
+  {
+    "children": [],
+    "name": "端点anc1-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "fc06f5fc-7791-4149-abd3-353783ad69c2/",
+    "type": 4042,
+    "uuid": "fc06f5fc-7791-4149-abd3-353783ad69c2"
+  },
+  {
+    "children": [],
+    "name": "端点anc2-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "cea394df-4a26-44cd-9509-e0880c81405d/",
+    "type": 4042,
+    "uuid": "cea394df-4a26-44cd-9509-e0880c81405d"
+  },
+  {
+    "children": [],
+    "name": "端点anc2-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "8125468b-6977-497d-88a7-ea55bb1b35a7/",
+    "type": 4042,
+    "uuid": "8125468b-6977-497d-88a7-ea55bb1b35a7"
+  },
+  {
+    "children": [],
+    "name": "端点anc2-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "c91eb4e4-931e-4782-8ad7-fbd509600215/",
+    "type": 4042,
+    "uuid": "c91eb4e4-931e-4782-8ad7-fbd509600215"
+  },
+  {
+    "children": [],
+    "name": "端点anc3-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "f7799c90-69b1-40bd-a8b5-12a714b6cea9/",
+    "type": 4042,
+    "uuid": "f7799c90-69b1-40bd-a8b5-12a714b6cea9"
+  },
+  {
+    "children": [],
+    "name": "端点anc3-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "57f32c7c-6dc1-4afa-846b-b467df6da596/",
+    "type": 4042,
+    "uuid": "57f32c7c-6dc1-4afa-846b-b467df6da596"
+  },
+  {
+    "children": [],
+    "name": "端点anc3-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "d47315e0-43ed-476b-84ff-b8fc03b597e9/",
+    "type": 4042,
+    "uuid": "d47315e0-43ed-476b-84ff-b8fc03b597e9"
+  },
+  {
+    "children": [],
+    "name": "端点anc4-1",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "310a5dc0-6c62-48e1-85d3-a78f8c49dab3/",
+    "type": 4042,
+    "uuid": "310a5dc0-6c62-48e1-85d3-a78f8c49dab3"
+  },
+  {
+    "children": [],
+    "name": "端点anc4-2",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "255793a6-701b-4095-af59-caf0b36cdc9a/",
+    "type": 4042,
+    "uuid": "255793a6-701b-4095-af59-caf0b36cdc9a"
+  },
+  {
+    "children": [],
+    "name": "端点anc4-3",
+    "parent_uuid": "dd96178c-0cdf-4078-a95d-242deb119a31",
+    "path": "5493305f-cc81-4cda-8d0a-7e11729e9ef0/",
+    "type": 4042,
+    "uuid": "5493305f-cc81-4cda-8d0a-7e11729e9ef0"
+  },
+  {
+    "children": [
+      "9b725e4c-6e6e-441b-8c48-9ce4596c1ea3",
+      "d9c9ffa3-8732-4c8b-a97d-475fd482cbcf",
+      "3f2ba7f2-489f-468d-b1e4-8e0bd8e48465",
+      "8906ee6a-2718-431c-82d8-d2b590fe972d"
+    ],
+    "name": "截面设置",
+    "parent_uuid": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30",
+    "path": "8cf10a04-cedf-4d0e-846d-7b066c1045c3/",
+    "type": 4038,
+    "uuid": "8cf10a04-cedf-4d0e-846d-7b066c1045c3"
+  },
+  {
+    "children": [],
+    "name": "截面平台段",
+    "parent_uuid": "8cf10a04-cedf-4d0e-846d-7b066c1045c3",
+    "path": "9b725e4c-6e6e-441b-8c48-9ce4596c1ea3/",
+    "type": 4041,
+    "uuid": "9b725e4c-6e6e-441b-8c48-9ce4596c1ea3"
+  },
+  {
+    "children": [],
+    "name": "截面海底段",
+    "parent_uuid": "8cf10a04-cedf-4d0e-846d-7b066c1045c3",
+    "path": "d9c9ffa3-8732-4c8b-a97d-475fd482cbcf/",
+    "type": 4041,
+    "uuid": "d9c9ffa3-8732-4c8b-a97d-475fd482cbcf"
+  },
+  {
+    "children": [],
+    "name": "截面中间段",
+    "parent_uuid": "8cf10a04-cedf-4d0e-846d-7b066c1045c3",
+    "path": "3f2ba7f2-489f-468d-b1e4-8e0bd8e48465/",
+    "type": 4041,
+    "uuid": "3f2ba7f2-489f-468d-b1e4-8e0bd8e48465"
+  },
+  {
+    "children": [],
+    "name": "截面立管",
+    "parent_uuid": "8cf10a04-cedf-4d0e-846d-7b066c1045c3",
+    "path": "8906ee6a-2718-431c-82d8-d2b590fe972d/",
+    "type": 4041,
+    "uuid": "8906ee6a-2718-431c-82d8-d2b590fe972d"
+  },
+  {
+    "children": [
+      "94ef017e-a3cc-4cde-a234-8be80cef026f",
+      "1caeba1c-1afc-42be-8375-2e7854d5ae88"
+    ],
+    "name": "线型设置",
+    "parent_uuid": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30",
+    "path": "bd41c7dd-988a-45d6-a7fe-065b7bb4a607/",
+    "type": 4070,
+    "uuid": "bd41c7dd-988a-45d6-a7fe-065b7bb4a607"
+  },
+  {
+    "children": [],
+    "name": "线型系泊",
+    "parent_uuid": "bd41c7dd-988a-45d6-a7fe-065b7bb4a607",
+    "path": "94ef017e-a3cc-4cde-a234-8be80cef026f/",
+    "type": 4069,
+    "uuid": "94ef017e-a3cc-4cde-a234-8be80cef026f"
+  },
+  {
+    "children": [],
+    "name": "线型立管",
+    "parent_uuid": "bd41c7dd-988a-45d6-a7fe-065b7bb4a607",
+    "path": "1caeba1c-1afc-42be-8375-2e7854d5ae88/",
+    "type": 4069,
+    "uuid": "1caeba1c-1afc-42be-8375-2e7854d5ae88"
+  },
+  {
+    "children": [
+      "70c9ce9f-a50b-4a6a-95ad-d7744692c178",
+      "275e9ab3-20cf-49a6-a2cb-e9aab8ec2979",
+      "f98c0d31-f2c7-422c-a23f-a3323917b426",
+      "6298b70a-87ef-4c23-99b1-006e380b7782",
+      "a309feff-c45b-4a3b-b5d2-6e5c88b3a3f1",
+      "93213b44-7745-40ae-b456-9920e0a6b86d",
+      "feffd8c9-3211-4841-a902-513ba170089a",
+      "d6e88793-f2ba-4baa-b488-3148c563576e",
+      "c275c95e-3b5b-4da0-9f05-9efe0d0631d3",
+      "dedd15d0-c993-4d82-b9a8-7d0ffba2030e",
+      "43abaf01-dd34-4af4-a7b1-568938f49de4",
+      "5258bd18-00ba-4062-9847-7c70406efda2",
+      "49dc03d6-522c-4aa0-a6f0-665a30e914ec",
+      "bfe2a509-efc0-42a3-9a62-d3821e8bdc44",
+      "92d66cdb-5126-4a62-9538-2e6bb083fb7b",
+      "4db906d9-2d1c-4b6e-bb44-aad1d8940fbd",
+      "57c55750-6f0e-435f-8704-660ca01be757",
+      "91e62002-11a4-48c1-a0ff-14076e02a8f7",
+      "64a704ca-b73a-46d4-b1fa-97e98eb29ad3",
+      "412626e9-df84-49b5-9011-037c56bd77f2",
+      "d0d7a54e-214a-42e4-97e3-3091bee298d3",
+      "e9922077-2b9b-4e6e-9a93-25910f4b9312",
+      "3d0ddb8a-16e9-49e4-ad70-e7e03c097d9c",
+      "8c4e7004-9aff-467a-92c2-a098554bb6c3",
+      "ea675ebc-7234-46ef-9b01-6e7bdc2fccdd",
+      "042e0297-8cbe-442d-be2d-4b0f788a32e3"
+    ],
+    "name": "管缆设置",
+    "parent_uuid": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30",
+    "path": "16544d27-54e4-4d88-ba07-49dadc6d62d6/",
+    "type": 4072,
+    "uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6"
+  },
+  {
+    "children": [],
+    "name": "管缆1",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "70c9ce9f-a50b-4a6a-95ad-d7744692c178/",
+    "type": 4071,
+    "uuid": "70c9ce9f-a50b-4a6a-95ad-d7744692c178"
+  },
+  {
+    "children": [],
+    "name": "管缆2",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "275e9ab3-20cf-49a6-a2cb-e9aab8ec2979/",
+    "type": 4071,
+    "uuid": "275e9ab3-20cf-49a6-a2cb-e9aab8ec2979"
+  },
+  {
+    "children": [],
+    "name": "管缆3",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "f98c0d31-f2c7-422c-a23f-a3323917b426/",
+    "type": 4071,
+    "uuid": "f98c0d31-f2c7-422c-a23f-a3323917b426"
+  },
+  {
+    "children": [],
+    "name": "管缆4",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "6298b70a-87ef-4c23-99b1-006e380b7782/",
+    "type": 4071,
+    "uuid": "6298b70a-87ef-4c23-99b1-006e380b7782"
+  },
+  {
+    "children": [],
+    "name": "管缆5",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "a309feff-c45b-4a3b-b5d2-6e5c88b3a3f1/",
+    "type": 4071,
+    "uuid": "a309feff-c45b-4a3b-b5d2-6e5c88b3a3f1"
+  },
+  {
+    "children": [],
+    "name": "管缆6",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "93213b44-7745-40ae-b456-9920e0a6b86d/",
+    "type": 4071,
+    "uuid": "93213b44-7745-40ae-b456-9920e0a6b86d"
+  },
+  {
+    "children": [],
+    "name": "管缆7",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "feffd8c9-3211-4841-a902-513ba170089a/",
+    "type": 4071,
+    "uuid": "feffd8c9-3211-4841-a902-513ba170089a"
+  },
+  {
+    "children": [],
+    "name": "管缆8",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "d6e88793-f2ba-4baa-b488-3148c563576e/",
+    "type": 4071,
+    "uuid": "d6e88793-f2ba-4baa-b488-3148c563576e"
+  },
+  {
+    "children": [],
+    "name": "管缆9",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "c275c95e-3b5b-4da0-9f05-9efe0d0631d3/",
+    "type": 4071,
+    "uuid": "c275c95e-3b5b-4da0-9f05-9efe0d0631d3"
+  },
+  {
+    "children": [],
+    "name": "管缆11",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "dedd15d0-c993-4d82-b9a8-7d0ffba2030e/",
+    "type": 4071,
+    "uuid": "dedd15d0-c993-4d82-b9a8-7d0ffba2030e"
+  },
+  {
+    "children": [],
+    "name": "管缆10",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "43abaf01-dd34-4af4-a7b1-568938f49de4/",
+    "type": 4071,
+    "uuid": "43abaf01-dd34-4af4-a7b1-568938f49de4"
+  },
+  {
+    "children": [],
+    "name": "管缆12",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "5258bd18-00ba-4062-9847-7c70406efda2/",
+    "type": 4071,
+    "uuid": "5258bd18-00ba-4062-9847-7c70406efda2"
+  },
+  {
+    "children": [],
+    "name": "管缆13",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "49dc03d6-522c-4aa0-a6f0-665a30e914ec/",
+    "type": 4071,
+    "uuid": "49dc03d6-522c-4aa0-a6f0-665a30e914ec"
+  },
+  {
+    "children": [],
+    "name": "管缆14",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "bfe2a509-efc0-42a3-9a62-d3821e8bdc44/",
+    "type": 4071,
+    "uuid": "bfe2a509-efc0-42a3-9a62-d3821e8bdc44"
+  },
+  {
+    "children": [],
+    "name": "管缆1-1",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "92d66cdb-5126-4a62-9538-2e6bb083fb7b/",
+    "type": 4071,
+    "uuid": "92d66cdb-5126-4a62-9538-2e6bb083fb7b"
+  },
+  {
+    "children": [],
+    "name": "管缆1-2",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "4db906d9-2d1c-4b6e-bb44-aad1d8940fbd/",
+    "type": 4071,
+    "uuid": "4db906d9-2d1c-4b6e-bb44-aad1d8940fbd"
+  },
+  {
+    "children": [],
+    "name": "管缆1-3",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "57c55750-6f0e-435f-8704-660ca01be757/",
+    "type": 4071,
+    "uuid": "57c55750-6f0e-435f-8704-660ca01be757"
+  },
+  {
+    "children": [],
+    "name": "管缆2-1",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "91e62002-11a4-48c1-a0ff-14076e02a8f7/",
+    "type": 4071,
+    "uuid": "91e62002-11a4-48c1-a0ff-14076e02a8f7"
+  },
+  {
+    "children": [],
+    "name": "管缆2-2",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "64a704ca-b73a-46d4-b1fa-97e98eb29ad3/",
+    "type": 4071,
+    "uuid": "64a704ca-b73a-46d4-b1fa-97e98eb29ad3"
+  },
+  {
+    "children": [],
+    "name": "管缆2-3",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "412626e9-df84-49b5-9011-037c56bd77f2/",
+    "type": 4071,
+    "uuid": "412626e9-df84-49b5-9011-037c56bd77f2"
+  },
+  {
+    "children": [],
+    "name": "管缆3-1",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "d0d7a54e-214a-42e4-97e3-3091bee298d3/",
+    "type": 4071,
+    "uuid": "d0d7a54e-214a-42e4-97e3-3091bee298d3"
+  },
+  {
+    "children": [],
+    "name": "管缆3-2",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "e9922077-2b9b-4e6e-9a93-25910f4b9312/",
+    "type": 4071,
+    "uuid": "e9922077-2b9b-4e6e-9a93-25910f4b9312"
+  },
+  {
+    "children": [],
+    "name": "管缆3-3",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "3d0ddb8a-16e9-49e4-ad70-e7e03c097d9c/",
+    "type": 4071,
+    "uuid": "3d0ddb8a-16e9-49e4-ad70-e7e03c097d9c"
+  },
+  {
+    "children": [],
+    "name": "管缆4-1",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "8c4e7004-9aff-467a-92c2-a098554bb6c3/",
+    "type": 4071,
+    "uuid": "8c4e7004-9aff-467a-92c2-a098554bb6c3"
+  },
+  {
+    "children": [],
+    "name": "管缆4-2",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "ea675ebc-7234-46ef-9b01-6e7bdc2fccdd/",
+    "type": 4071,
+    "uuid": "ea675ebc-7234-46ef-9b01-6e7bdc2fccdd"
+  },
+  {
+    "children": [],
+    "name": "管缆4-3",
+    "parent_uuid": "16544d27-54e4-4d88-ba07-49dadc6d62d6",
+    "path": "042e0297-8cbe-442d-be2d-4b0f788a32e3/",
+    "type": 4071,
+    "uuid": "042e0297-8cbe-442d-be2d-4b0f788a32e3"
+  },
+  {
+    "children": [],
+    "name": "其他参数设置",
+    "parent_uuid": "3bca85e1-70b0-40ea-91c4-c81a41bb4e30",
+    "path": "ca48c7da-a51f-42ee-9263-a98202073045/",
+    "type": 4039,
+    "uuid": "ca48c7da-a51f-42ee-9263-a98202073045"
+  },
+  {
+    "children": [
+      "2c64b643-2d85-47e3-b736-b212d5228125",
+      "5e5e62b8-0032-4acc-9f19-79e6fa7bbc71",
+      "64b3dccb-b633-4572-9e1f-0c05156beabb"
+    ],
+    "name": "计算任务参数",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "dac7fda4-0d22-4151-8cac-367f44d48ab7/",
+    "type": 4034,
+    "uuid": "dac7fda4-0d22-4151-8cac-367f44d48ab7"
+  },
+  {
+    "children": [],
+    "name": "静态计算",
+    "parent_uuid": "dac7fda4-0d22-4151-8cac-367f44d48ab7",
+    "path": "2c64b643-2d85-47e3-b736-b212d5228125/",
+    "type": 4074,
+    "uuid": "2c64b643-2d85-47e3-b736-b212d5228125"
+  },
+  {
+    "children": [],
+    "name": "动态计算",
+    "parent_uuid": "dac7fda4-0d22-4151-8cac-367f44d48ab7",
+    "path": "5e5e62b8-0032-4acc-9f19-79e6fa7bbc71/",
+    "type": 4073,
+    "uuid": "5e5e62b8-0032-4acc-9f19-79e6fa7bbc71"
+  },
+  {
+    "children": [],
+    "name": "其他参数",
+    "parent_uuid": "dac7fda4-0d22-4151-8cac-367f44d48ab7",
+    "path": "64b3dccb-b633-4572-9e1f-0c05156beabb/",
+    "type": 4529,
+    "uuid": "64b3dccb-b633-4572-9e1f-0c05156beabb"
+  },
+  {
+    "children": [
+      "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd"
+    ],
+    "name": "计算任务",
+    "parent_uuid": "b60a26e0-3b6a-4ee9-9fc5-046974a453f9",
+    "path": "7eb00a5b-4dba-44d6-b6f1-4bc2c5aa394f/",
+    "type": 4046,
+    "uuid": "7eb00a5b-4dba-44d6-b6f1-4bc2c5aa394f"
+  },
+  {
+    "children": [
+      "5e7dc800-60b2-4c6f-a767-d87456971178",
+      "e7b2d3e3-9cf8-41e9-8bfe-c07934c73352",
+      "9759e3f3-42c5-4bd6-a40e-99617d12cf3e",
+      "c441910f-8959-48ae-b959-5be966f743f5",
+      "7d2ed736-9c20-4cf7-88e0-6521c0af11e3"
+    ],
+    "name": "新建工况",
+    "parent_uuid": "7eb00a5b-4dba-44d6-b6f1-4bc2c5aa394f",
+    "path": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd/",
+    "type": 4036,
+    "uuid": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd"
+  },
+  {
+    "children": [],
+    "name": "海面数据",
+    "parent_uuid": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd",
+    "path": "5e7dc800-60b2-4c6f-a767-d87456971178/",
+    "type": 4101,
+    "uuid": "5e7dc800-60b2-4c6f-a767-d87456971178"
+  },
+  {
+    "children": [],
+    "name": "海底数据",
+    "parent_uuid": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd",
+    "path": "e7b2d3e3-9cf8-41e9-8bfe-c07934c73352/",
+    "type": 4102,
+    "uuid": "e7b2d3e3-9cf8-41e9-8bfe-c07934c73352"
+  },
+  {
+    "children": [
+      "d96b4a16-da26-49b1-afc5-dd4917a22c20"
+    ],
+    "name": "浮体数据",
+    "parent_uuid": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd",
+    "path": "9759e3f3-42c5-4bd6-a40e-99617d12cf3e/",
+    "type": 4106,
+    "uuid": "9759e3f3-42c5-4bd6-a40e-99617d12cf3e"
+  },
+  {
+    "children": [],
+    "name": "浮体数据",
+    "parent_uuid": "9759e3f3-42c5-4bd6-a40e-99617d12cf3e",
+    "path": "d96b4a16-da26-49b1-afc5-dd4917a22c20/",
+    "type": 4045,
+    "uuid": "d96b4a16-da26-49b1-afc5-dd4917a22c20"
+  },
+  {
+    "children": [
+      "63adeb5c-1834-4a7e-8d9e-800553782339",
+      "e1dc2fed-33ef-4fe4-84de-b0fa748f7f2e",
+      "edd571f3-1b93-4b2e-a8c2-a2bca4d4f1a4",
+      "5f12f752-2fc0-4a18-8e37-03609d4f64d1",
+      "61238547-0daf-4b95-9793-cf9236e9a7b3",
+      "8891f3b9-ef33-40a8-a5fb-c6f0cb1efc6c",
+      "18ab0d16-e7f8-4b5b-8e33-b9c010d278c6",
+      "b7ee2cb7-1601-4d6d-8bec-cdba8ebcb733",
+      "53ce6a5e-496a-45b7-bc78-b566a06b376b",
+      "ed480c5d-c0ac-4ffc-9bf4-4e5e4045c158"
+    ],
+    "name": "立管数据",
+    "parent_uuid": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd",
+    "path": "c441910f-8959-48ae-b959-5be966f743f5/",
+    "type": 4105,
+    "uuid": "c441910f-8959-48ae-b959-5be966f743f5"
+  },
+  {
+    "children": [],
+    "name": "管缆5",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "63adeb5c-1834-4a7e-8d9e-800553782339/",
+    "type": 4043,
+    "uuid": "63adeb5c-1834-4a7e-8d9e-800553782339"
+  },
+  {
+    "children": [],
+    "name": "管缆6",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "e1dc2fed-33ef-4fe4-84de-b0fa748f7f2e/",
+    "type": 4043,
+    "uuid": "e1dc2fed-33ef-4fe4-84de-b0fa748f7f2e"
+  },
+  {
+    "children": [],
+    "name": "管缆7",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "edd571f3-1b93-4b2e-a8c2-a2bca4d4f1a4/",
+    "type": 4043,
+    "uuid": "edd571f3-1b93-4b2e-a8c2-a2bca4d4f1a4"
+  },
+  {
+    "children": [],
+    "name": "管缆8",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "5f12f752-2fc0-4a18-8e37-03609d4f64d1/",
+    "type": 4043,
+    "uuid": "5f12f752-2fc0-4a18-8e37-03609d4f64d1"
+  },
+  {
+    "children": [],
+    "name": "管缆9",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "61238547-0daf-4b95-9793-cf9236e9a7b3/",
+    "type": 4043,
+    "uuid": "61238547-0daf-4b95-9793-cf9236e9a7b3"
+  },
+  {
+    "children": [],
+    "name": "管缆11",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "8891f3b9-ef33-40a8-a5fb-c6f0cb1efc6c/",
+    "type": 4043,
+    "uuid": "8891f3b9-ef33-40a8-a5fb-c6f0cb1efc6c"
+  },
+  {
+    "children": [],
+    "name": "管缆10",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "18ab0d16-e7f8-4b5b-8e33-b9c010d278c6/",
+    "type": 4043,
+    "uuid": "18ab0d16-e7f8-4b5b-8e33-b9c010d278c6"
+  },
+  {
+    "children": [],
+    "name": "管缆12",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "b7ee2cb7-1601-4d6d-8bec-cdba8ebcb733/",
+    "type": 4043,
+    "uuid": "b7ee2cb7-1601-4d6d-8bec-cdba8ebcb733"
+  },
+  {
+    "children": [],
+    "name": "管缆13",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "53ce6a5e-496a-45b7-bc78-b566a06b376b/",
+    "type": 4043,
+    "uuid": "53ce6a5e-496a-45b7-bc78-b566a06b376b"
+  },
+  {
+    "children": [],
+    "name": "管缆14",
+    "parent_uuid": "c441910f-8959-48ae-b959-5be966f743f5",
+    "path": "ed480c5d-c0ac-4ffc-9bf4-4e5e4045c158/",
+    "type": 4043,
+    "uuid": "ed480c5d-c0ac-4ffc-9bf4-4e5e4045c158"
+  },
+  {
+    "children": [
+      "f39b7dc6-143c-40eb-9984-56056ec4bbaa",
+      "1604c618-a00d-4a95-92d0-be64e0bf126f",
+      "29e7b229-2e37-44c0-a19d-af7556938259",
+      "36a6c57e-1cd0-468f-8220-2ccc1f53d08a",
+      "98be7b5f-45f1-4fb5-bccc-2b9d8596619b",
+      "0bbacbdf-70ed-48e7-9e2e-c70c6e53726e",
+      "958aaca5-f8dc-4238-b21b-6488752f2d42",
+      "851f10e0-cf2e-4b2e-81c5-509b544a2e0b",
+      "1c168b97-1087-484a-b0cb-e1adf8bb7ce4",
+      "106e5006-012b-464c-bd0a-9d30591ab847",
+      "4d2aa70b-4618-4d89-9d8d-2c0745fcb78e",
+      "9b498f8c-a801-4fe7-97e2-a75a6b32d543",
+      "bcf2a354-0818-4223-b29a-4f93f8d80e9d",
+      "5192c2ae-7b6b-41c5-895f-e849f37c8e89",
+      "2bb60cd7-803c-4517-9e7d-fe32998786e9",
+      "2396907a-8b91-4d31-91d0-09c8953d4498"
+    ],
+    "name": "系泊数据",
+    "parent_uuid": "4700b2a5-a5c4-4ba6-84fa-687e6b2721cd",
+    "path": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3/",
+    "type": 4104,
+    "uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3"
+  },
+  {
+    "children": [],
+    "name": "管缆1",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "f39b7dc6-143c-40eb-9984-56056ec4bbaa/",
+    "type": 4083,
+    "uuid": "f39b7dc6-143c-40eb-9984-56056ec4bbaa"
+  },
+  {
+    "children": [],
+    "name": "管缆2",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "1604c618-a00d-4a95-92d0-be64e0bf126f/",
+    "type": 4083,
+    "uuid": "1604c618-a00d-4a95-92d0-be64e0bf126f"
+  },
+  {
+    "children": [],
+    "name": "管缆3",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "29e7b229-2e37-44c0-a19d-af7556938259/",
+    "type": 4083,
+    "uuid": "29e7b229-2e37-44c0-a19d-af7556938259"
+  },
+  {
+    "children": [],
+    "name": "管缆4",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "36a6c57e-1cd0-468f-8220-2ccc1f53d08a/",
+    "type": 4083,
+    "uuid": "36a6c57e-1cd0-468f-8220-2ccc1f53d08a"
+  },
+  {
+    "children": [],
+    "name": "管缆1-1",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "98be7b5f-45f1-4fb5-bccc-2b9d8596619b/",
+    "type": 4083,
+    "uuid": "98be7b5f-45f1-4fb5-bccc-2b9d8596619b"
+  },
+  {
+    "children": [],
+    "name": "管缆1-2",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "0bbacbdf-70ed-48e7-9e2e-c70c6e53726e/",
+    "type": 4083,
+    "uuid": "0bbacbdf-70ed-48e7-9e2e-c70c6e53726e"
+  },
+  {
+    "children": [],
+    "name": "管缆1-3",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "958aaca5-f8dc-4238-b21b-6488752f2d42/",
+    "type": 4083,
+    "uuid": "958aaca5-f8dc-4238-b21b-6488752f2d42"
+  },
+  {
+    "children": [],
+    "name": "管缆2-1",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "851f10e0-cf2e-4b2e-81c5-509b544a2e0b/",
+    "type": 4083,
+    "uuid": "851f10e0-cf2e-4b2e-81c5-509b544a2e0b"
+  },
+  {
+    "children": [],
+    "name": "管缆2-2",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "1c168b97-1087-484a-b0cb-e1adf8bb7ce4/",
+    "type": 4083,
+    "uuid": "1c168b97-1087-484a-b0cb-e1adf8bb7ce4"
+  },
+  {
+    "children": [],
+    "name": "管缆2-3",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "106e5006-012b-464c-bd0a-9d30591ab847/",
+    "type": 4083,
+    "uuid": "106e5006-012b-464c-bd0a-9d30591ab847"
+  },
+  {
+    "children": [],
+    "name": "管缆3-1",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "4d2aa70b-4618-4d89-9d8d-2c0745fcb78e/",
+    "type": 4083,
+    "uuid": "4d2aa70b-4618-4d89-9d8d-2c0745fcb78e"
+  },
+  {
+    "children": [],
+    "name": "管缆3-2",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "9b498f8c-a801-4fe7-97e2-a75a6b32d543/",
+    "type": 4083,
+    "uuid": "9b498f8c-a801-4fe7-97e2-a75a6b32d543"
+  },
+  {
+    "children": [],
+    "name": "管缆3-3",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "bcf2a354-0818-4223-b29a-4f93f8d80e9d/",
+    "type": 4083,
+    "uuid": "bcf2a354-0818-4223-b29a-4f93f8d80e9d"
+  },
+  {
+    "children": [],
+    "name": "管缆4-1",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "5192c2ae-7b6b-41c5-895f-e849f37c8e89/",
+    "type": 4083,
+    "uuid": "5192c2ae-7b6b-41c5-895f-e849f37c8e89"
+  },
+  {
+    "children": [],
+    "name": "管缆4-2",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "2bb60cd7-803c-4517-9e7d-fe32998786e9/",
+    "type": 4083,
+    "uuid": "2bb60cd7-803c-4517-9e7d-fe32998786e9"
+  },
+  {
+    "children": [],
+    "name": "管缆4-3",
+    "parent_uuid": "7d2ed736-9c20-4cf7-88e0-6521c0af11e3",
+    "path": "2396907a-8b91-4d31-91d0-09c8953d4498/",
+    "type": 4083,
+    "uuid": "2396907a-8b91-4d31-91d0-09c8953d4498"
+  }
+]
