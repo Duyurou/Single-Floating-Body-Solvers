@@ -9,6 +9,7 @@ from core.models.project import LoadedProject
 from core.sopro.environment_data import (
     EnvironmentDataError,
     load_environment_state,
+    load_environment_states,
     save_environment_state,
 )
 from core.sopro.loader import SoproLoadError, load_sopro_project
@@ -40,13 +41,28 @@ class ProjectController:
             return None
         return project.input_summaries[0].input_dir
 
-    def load_environment_data(self) -> EnvironmentDataState:
-        """加载当前工程的环境数据。"""
+    def list_environment_data(self) -> list[EnvironmentDataState]:
+        """列出当前工程的全部环境，不把某个 INPUT 当成工程环境。"""
+
+        project = self._loaded_project
+        if project is None:
+            return []
+        return load_environment_states(project.extract_dir)
+
+    def load_environment_data(
+        self,
+        environment_path: Path | None = None,
+    ) -> EnvironmentDataState:
+        """加载指定环境；未指定时兼容单环境旧调用。"""
         project = self._loaded_project
         if project is None:
             return EnvironmentDataState()
         input_dir = self.get_primary_input_dir()
-        return load_environment_state(project.extract_dir, input_dir)
+        return load_environment_state(
+            project.extract_dir,
+            input_dir,
+            environment_path,
+        )
 
     def save_environment_data(
         self,
@@ -131,7 +147,7 @@ class ProjectController:
             f"[INFO] 工程名称: {manifest.name or '未命名'}",
             f"[INFO] 版本: {manifest.version or '-'}",
             f"[INFO] 作者: {manifest.author or '-'}",
-            ("[INFO] 发现 INPUT 目录数量: " f"{len(project.input_summaries)}"),
+            (f"[INFO] 发现 INPUT 目录数量: {len(project.input_summaries)}"),
         ]
         for index, summary in enumerate(project.input_summaries, start=1):
             rel = summary.input_dir.relative_to(project.extract_dir)
@@ -203,7 +219,7 @@ class ProjectController:
             for key, label in env_labels.items():
                 if key in summary.environment_values:
                     lines.append(
-                        "  " f"{label}: {summary.environment_values[key]}",
+                        f"  {label}: {summary.environment_values[key]}",
                     )
         lines.append("")
         return lines

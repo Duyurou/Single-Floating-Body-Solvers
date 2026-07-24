@@ -39,6 +39,9 @@ class EnvironmentDataState:
     """环境数据对话框状态。"""
 
     name: str = "环境数据"
+    # 来自旧 PACKET UUID（通常也是 .4048 文件的父目录名）的稳定身份。
+    # 新建环境时由保存服务生成，工况通过这个 ID 引用具体环境。
+    environment_id: str = ""
     description: str = ""
     wind_wave_index: int = 0
     wind_index: int = 0
